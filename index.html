@@ -9,12 +9,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fine Tooth — Software Quality Assurance & Test Automation Agency</title>
-<meta name="description" content="Engineering-focused QA and test automation agency. We provide manual testing, API validation, cross-browser verification, mobile app QA, and Playwright, Cypress, and Selenium automation for software teams.">
+<title>Fine Tooth — Independent QA &amp; Test Automation</title>
+<meta name="description" content="We help software teams and game studios uncover defects, validate critical user journeys, and build reliable automated tests so they can release with greater confidence.">
 <meta name="generator" content="8B Templates">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Fine Tooth — Software Quality Assurance & Test Automation Agency">
-<meta property="og:description" content="We help software teams validate critical user journeys, eliminate defects, and build reliable automated tests so they can release with confidence.">
+<meta property="og:title" content="Fine Tooth — Independent QA &amp; Test Automation">
+<meta property="og:description" content="We help software teams and game studios uncover defects, validate critical user journeys, and build reliable automated tests so they can release with greater confidence.">
 <meta property="og:image" content="previews/desktop.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%236c3cff'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'28'%20font-weight%3D'800'%20text-anchor%3D'middle'%20fill%3D'%23ffffff'%3EFT%3C%2Ftext%3E%3C%2Fsvg%3E">
@@ -394,60 +394,25 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 }
 }
 </style>
-<style data-8b-part="section:studio">
+<style data-8b-part="section:team">
 @layer sections {
-#studio { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-2); }
-#studio .studio__head { display: grid; gap: 28px; margin-bottom: clamp(48px, 8vh, 96px); }
-#studio .studio__lead { max-width: 42rem; }
-#studio .studio__collage { position: relative; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-#studio .shot { position: relative; overflow: hidden; border-radius: var(--radius-3); background: var(--color-4); }
-#studio .shot img { width: 100%; height: 100%; object-fit: cover; }
-#studio .shot--wide { grid-column: span 2; aspect-ratio: 3 / 2; }
-#studio .shot--tall { aspect-ratio: 3 / 4; }
-#studio .studio__roles { grid-column: span 2; display: grid; align-content: start; gap: 18px; padding-top: 24px; }
-#studio .studio__roles ul { display: grid; }
-#studio .role { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 4px 16px; padding: 14px 0; border-top: 1px solid color-mix(in srgb, var(--color-1) 16%, transparent); }
-#studio .role__place { color: var(--color-6); }
-@media (min-width: 900px) {
-  #studio .studio__head { grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); align-items: end; column-gap: 6vw; }
-  #studio .studio__collage { display: block; aspect-ratio: 1.85; }
-  #studio .shot { position: absolute; }
-  #studio .shot:nth-child(1) { left: 0; top: 0; width: 34%; }
-  #studio .shot:nth-child(2) { left: 37%; top: 5.5%; width: 19%; }
-  #studio .shot:nth-child(3) { left: 8%; top: 47%; width: 20%; }
-  #studio .shot:nth-child(4) { left: 59%; top: 0; width: 41%; }
-  #studio .shot:nth-child(5) { left: 31%; top: 53.3%; width: 36%; }
-  #studio .studio__roles { position: absolute; left: 71%; top: 55%; width: 29%; padding-top: 0; }
+#team { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-2); color: var(--color-1); border-top: 1px solid color-mix(in srgb, var(--color-1) 12%, transparent); }
+#team .team__head { display: grid; gap: 20px; margin-bottom: clamp(36px, 6vh, 60px); }
+#team .team__lead { max-width: 44rem; color: var(--color-6); }
+#team .team__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+@media (min-width: 720px) {
+  #team .team__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
 }
+#team .team-card { display: flex; flex-direction: column; align-items: flex-start; padding: clamp(28px, 3vw, 40px); border-radius: var(--radius-1); background: var(--color-4); border: 1px solid color-mix(in srgb, var(--color-1) 8%, transparent); transition: transform .3s ease, box-shadow .3s ease; }
+@media (hover: hover) {
+  #team .team-card:hover { transform: translateY(-4px); box-shadow: 0 16px 36px rgba(0,0,0,0.06); }
 }
-</style>
-<style data-8b-part="section:journal">
-@layer sections {
-#journal { position: relative; padding: calc(var(--space-2) * 0.6) var(--space-1) var(--space-2); background: var(--color-2); }
-#journal .journal__head { margin-bottom: clamp(40px, 7vh, 88px); }
-#journal .journal__body { display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px; align-items: start; }
-#journal .journal__frame { position: relative; overflow: hidden; border-radius: var(--radius-1); background: var(--color-4); aspect-ratio: 16 / 10; }
-#journal .journal__shot { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-#journal .journal__shot:first-child { z-index: 1; }
-#journal .journal__list { display: grid; gap: clamp(36px, 8vh, 72px); }
-#journal .story { display: grid; gap: 12px; max-width: 36rem; padding-top: 20px; border-top: 1px solid color-mix(in srgb, var(--color-1) 16%, transparent); }
-#journal .story__meta { color: var(--color-6); }
-#journal .story__meta span { color: var(--color-3); }
-#journal .story__text { color: var(--color-6); }
-@media (min-width: 900px) {
-  #journal .journal__body { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 7vw; }
-  #journal .journal__frame { aspect-ratio: 4 / 5; }
-  #journal .journal__list { gap: clamp(64px, 18vh, 170px); padding-block: 6svh 10svh; }
-}
-}
-</style>
-<style data-8b-part="scene-style:journal">
-@layer scenes {
-@media (prefers-reduced-motion: no-preference) {
-  #journal.is-swap .journal__frame { position: sticky; z-index: 1; top: 80px; }
-  #journal.is-swap .journal__shot:first-child { z-index: auto; }
-  @media (min-width: 900px) { #journal.is-swap .journal__frame { top: calc(50svh - min(30svh, 22vw)); max-height: 60svh; } }
-}
+#team .team-card__avatar { width: 72px; height: 72px; border-radius: var(--radius-2); background: color-mix(in srgb, var(--color-3) 14%, var(--color-4)); border: 2px solid color-mix(in srgb, var(--color-3) 38%, transparent); display: flex; align-items: center; justify-content: center; font-family: var(--font-1); font-size: 30px; font-weight: 800; color: var(--color-3); margin-bottom: 24px; flex: none; }
+#team .team-card__name { font-family: var(--font-1); font-size: clamp(26px, 2.4vw, 32px); font-weight: 700; line-height: 1.2; margin: 0 0 10px; color: var(--color-1); }
+#team .team-card__role { font-family: var(--font-2); font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-3); }
+#team .team__highlight { margin-top: clamp(32px, 5vh, 48px); padding: clamp(20px, 2.5vw, 28px); border-radius: var(--radius-1); background: color-mix(in srgb, var(--color-3) 8%, var(--color-4)); border-left: 4px solid var(--color-3); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; }
+#team .team__highlight-text { font-family: var(--font-2); font-size: 15px; color: var(--color-1); font-weight: 600; }
+#team .team__highlight-sub { font-family: var(--font-2); font-size: 13px; color: var(--color-6); }
 }
 </style>
 <style data-8b-part="section:pricing">
@@ -470,8 +435,10 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 #pricing .plan-card--featured { background: var(--color-1); color: var(--color-2); border: 2px solid var(--color-3); box-shadow: var(--shadow-1); }
 #pricing .plan-card__badge { position: absolute; top: 18px; right: 20px; background: var(--color-3); color: var(--color-2); font-family: var(--font-2); font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 10px; border-radius: var(--radius-2); }
 #pricing .plan-card__name { font-family: var(--font-1); font-size: clamp(24px, 2.2vw, 30px); font-weight: 700; margin-bottom: 4px; }
-#pricing .plan-card__scope { font-family: var(--font-2); font-size: 13px; font-weight: 600; color: var(--color-3); margin-bottom: 16px; }
+#pricing .plan-card__scope { font-family: var(--font-2); font-size: 13px; font-weight: 600; color: var(--color-3); margin-bottom: 8px; }
 #pricing .plan-card--featured .plan-card__scope { color: var(--color-5); }
+#pricing .plan-card__limit { display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; border-radius: var(--radius-2); background: color-mix(in srgb, var(--color-3) 12%, transparent); border: 1px solid color-mix(in srgb, var(--color-3) 30%, transparent); color: var(--color-3); font-family: var(--font-2); font-size: 12px; font-weight: 700; letter-spacing: 0.03em; margin-bottom: 14px; width: fit-content; text-transform: uppercase; }
+#pricing .plan-card--featured .plan-card__limit { background: color-mix(in srgb, var(--color-3) 25%, transparent); border-color: var(--color-3); color: var(--color-2); }
 #pricing .plan-card__price-box { margin-bottom: 18px; padding-bottom: 16px; border-bottom: 1px solid color-mix(in srgb, currentColor 18%, transparent); }
 #pricing .plan-card__amount { font-family: var(--font-1); font-size: clamp(34px, 3.6vw, 46px); font-weight: 800; letter-spacing: -0.04em; }
 #pricing .plan-card__period { font-family: var(--font-2); font-size: 15px; font-weight: 500; opacity: 0.75; }
@@ -573,12 +540,12 @@ textarea.m-field { min-height: 112px; resize: vertical; }
       <li><a class="m-link-2" href="#work">Work</a></li>
       <li><a class="m-link-2" href="#capabilities">Services</a></li>
       <li><a class="m-link-2" href="#method">Process</a></li>
+      <li><a class="m-link-2" href="#team">Team</a></li>
       <li><a class="m-link-2" href="#pricing">Pricing</a></li>
-      <li><a class="m-link-2" href="#studio">Studio</a></li>
       <li><a class="m-link-2" href="#faq">FAQ</a></li>
     </ul>
   </nav>
-  <a class="m-btn nav__cta" href="#contact"><span class="m-btn__label">Discuss Project</span></a>
+  <a class="m-btn nav__cta" href="#contact"><span class="m-btn__label">Discuss Your Project</span></a>
   <button class="m-btn-2 nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="m-btn__label">Menu</span></button>
   <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" data-lenis-prevent hidden>
     <div class="menu__top"><button class="m-icon menu__close" type="button" aria-label="Close the menu"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg></button></div>
@@ -586,8 +553,8 @@ textarea.m-field { min-height: 112px; resize: vertical; }
       <li><a href="#work">Work<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#capabilities">Services<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#method">Process<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#team">Team<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#pricing">Pricing<span class="m-dot" aria-hidden="true"></span></a></li>
-      <li><a href="#studio">Studio<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#faq">FAQ<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#contact">Contact<span class="m-dot" aria-hidden="true"></span></a></li>
     </ul>
@@ -598,8 +565,9 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 <!-- hero: first screen: a one-word greeting whose full stop is a giant round photo (demo: "Hello") (animation: scene:hero) -->
 <section id="hero" data-8b-section="hero" aria-labelledby="hero-title">
   <div class="hero__intro">
-    <p class="m-badge" style="margin-bottom: 12px; background: color-mix(in srgb, var(--color-3) 12%, transparent); border-color: var(--color-3); color: var(--color-3); font-weight: 700; letter-spacing: 0.04em;">INDEPENDENT QA &amp; TEST AUTOMATION</p>
-    <p class="m-text-5 hero__lead">We help software teams and game studios uncover defects, validate critical user journeys, and build reliable automated tests so they can release with confidence.</p>
+    <p class="m-badge" style="margin-bottom: 8px; background: color-mix(in srgb, var(--color-3) 12%, transparent); border-color: var(--color-3); color: var(--color-3); font-weight: 700; letter-spacing: 0.04em;">INDEPENDENT QA &amp; TEST AUTOMATION</p>
+    <h2 class="m-text-3 hero__headline" style="font-size: clamp(28px, 3.2vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.03em; margin: 0 0 10px;">Find the bugs before your users do.</h2>
+    <p class="m-text-5 hero__lead">We help software teams and game studios uncover defects, validate critical user journeys, and build reliable automated tests so they can release with greater confidence.</p>
     <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 18px;">
       <a class="m-btn" href="#contact"><span class="m-btn__label">Discuss Your Project</span></a>
       <a class="m-link hero__link" href="#work"><span class="m-link__label">Explore Our Work</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
@@ -612,12 +580,13 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 <section id="statement" data-8b-section="statement" aria-labelledby="statement-title">
   <h2 class="m-text-3 statement__title" id="statement-title"><span class="statement__line">Confidence is</span><span class="statement__line">engineered<span class="m-dot statement__dot" aria-hidden="true"></span></span></h2>
   <div class="statement__body">
-    <p class="m-text-5 statement__lead" data-8b-motion="ink">Shipping fast is easy. Knowing every critical checkout, API payload, game mechanic, and user journey holds under real-world conditions is where engineering counts. We partner with product teams and game studios to build reliable test suites, eliminate regressions, and give engineering leaders total confidence before every release.</p>
+    <p class="m-text-5 statement__lead" data-8b-motion="ink">Shipping fast is easy. Knowing every critical checkout, API payload, game mechanic, and user journey holds under real-world conditions is where engineering counts. We partner with product teams and game studios to build reliable test suites, uncover regressions, and give engineering leaders greater confidence before every release.</p>
     <nav class="statement__index" aria-label="On this page">
       <ul>
         <li><a class="m-link" href="#work"><span class="m-link__label">Selected work</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#capabilities"><span class="m-link__label">QA services</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#method"><span class="m-link__label">Our process</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#team"><span class="m-link__label">Meet our team</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#pricing"><span class="m-link__label">Plans &amp; pricing</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#faq"><span class="m-link__label">Fair questions</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#contact"><span class="m-link__label">Discuss project</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
@@ -708,8 +677,8 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     <li class="service m-surface">
       <div class="service__text">
         <h3 class="m-text-4">Manual &amp; Functional Testing</h3>
-        <p class="m-text-5 service__line">Validate application behavior, critical user journeys, business logic, acceptance criteria, and complex edge cases before they reach your customers.</p>
-        <ul class="service__tags"><li class="m-badge">User journeys</li><li class="m-badge">Acceptance criteria</li><li class="m-badge">Edge cases</li><li class="m-badge">Exploratory testing</li></ul>
+        <p class="m-text-5 service__line">Validate application behavior, critical user journeys, business logic, acceptance criteria, and edge cases through structured test execution and reproducible bug reports.</p>
+        <ul class="service__tags"><li class="m-badge">User journeys</li><li class="m-badge">Acceptance criteria</li><li class="m-badge">Edge cases</li><li class="m-badge">Bug reports</li></ul>
       </div>
       <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#f3f3f3" src="https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="Manual and functional software testing verification" loading="lazy"></div>
       <span class="service__shade" aria-hidden="true"></span>
@@ -718,7 +687,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
       <div class="service__text">
         <h3 class="m-text-4">UI &amp; Cross-Browser Testing</h3>
         <p class="m-text-5 service__line">Identify layout inconsistencies, responsive issues, and browser compatibility problems across Chrome, Firefox, Safari, and Edge on desktop and mobile viewports.</p>
-        <ul class="service__tags"><li class="m-badge">Cross-browser</li><li class="m-badge">Responsive UI</li><li class="m-badge">Browser compatibility</li><li class="m-badge">Device matrix</li></ul>
+        <ul class="service__tags"><li class="m-badge">Cross-browser</li><li class="m-badge">Responsive UI</li><li class="m-badge">Browser compatibility</li><li class="m-badge">Viewport checks</li></ul>
       </div>
       <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#c0c0c0" src="https://images.unsplash.com/photo-1601972599720-36938d4ecd31?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8aGFuZCUyMGhvbGRpbmclMjBzbWFydHBob25lJTIwYXBwJTIwc2NyZWVufGVufDF8MXx8fDE3OTEyMDk3NzJ8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="UI and cross-device testing across smartphones and desktops" loading="lazy"></div>
       <span class="service__shade" aria-hidden="true"></span>
@@ -726,8 +695,8 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     <li class="service m-surface">
       <div class="service__text">
         <h3 class="m-text-4">API &amp; Integration Testing</h3>
-        <p class="m-text-5 service__line">Validate requests, responses, HTTP status codes, schema contracts, authentication headers, rate limits, and error handling for REST and GraphQL endpoints.</p>
-        <ul class="service__tags"><li class="m-badge">REST &amp; GraphQL</li><li class="m-badge">Schema validation</li><li class="m-badge">Status codes</li><li class="m-badge">Auth contracts</li></ul>
+        <p class="m-text-5 service__line">Validate requests, responses, HTTP status codes, schema contracts, authentication headers, and error handling for REST endpoints under expected and invalid payloads.</p>
+        <ul class="service__tags"><li class="m-badge">REST endpoints</li><li class="m-badge">Schema validation</li><li class="m-badge">Status codes</li><li class="m-badge">Error handling</li></ul>
       </div>
       <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#262626" src="https://images.unsplash.com/photo-1720175646447-e37d994007fc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YmlsbGJvYXJkJTIwY2l0eSUyMHN0cmVldCUyMHBvc3RlcnxlbnwxfDF8fHwxNzkxMjA5NzUxfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="API endpoints and backend architecture testing" loading="lazy"></div>
       <span class="service__shade" aria-hidden="true"></span>
@@ -735,8 +704,8 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     <li class="service m-surface">
       <div class="service__text">
         <h3 class="m-text-4">Mobile Application Testing</h3>
-        <p class="m-text-5 service__line">Test native and hybrid mobile applications for device behavior, touch usability, OS fragmentation, interruptions, backgrounding, and agreed regression paths.</p>
-        <ul class="service__tags"><li class="m-badge">iOS &amp; Android</li><li class="m-badge">Device behavior</li><li class="m-badge">Usability</li><li class="m-badge">Regression paths</li></ul>
+        <p class="m-text-5 service__line">Test native and hybrid mobile app functionality, usability, touch behavior, navigation, and agreed regression scenarios across iOS and Android viewports.</p>
+        <ul class="service__tags"><li class="m-badge">iOS &amp; Android</li><li class="m-badge">Touch usability</li><li class="m-badge">Navigation flows</li><li class="m-badge">Regression checks</li></ul>
       </div>
       <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#c0c0d9" src="https://images.unsplash.com/photo-1512758017271-d7b84c2113f1?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="Mobile testing matrix and test scenario planning" loading="lazy"></div>
       <span class="service__shade" aria-hidden="true"></span>
@@ -744,8 +713,8 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     <li class="service m-surface">
       <div class="service__text">
         <h3 class="m-text-4">Game Testing &amp; Mechanics Validation</h3>
-        <p class="m-text-5 service__line">Comprehensive validation for mobile, web, and indie games: gameplay and mechanics validation, UI/UX testing, level progression, collision detection, performance and frame-rate stability, device compatibility, and structured bug reporting.</p>
-        <ul class="service__tags"><li class="m-badge">Gameplay &amp; mechanics</li><li class="m-badge">Collision detection</li><li class="m-badge">Level progression</li><li class="m-badge">Performance &amp; stability</li><li class="m-badge">Device compatibility</li><li class="m-badge">Bug reporting</li></ul>
+        <p class="m-text-5 service__line">Comprehensive validation for mobile, web, and indie games: gameplay mechanics, UI/UX flows, level progression, collision detection, performance stability, and structured bug reporting.</p>
+        <ul class="service__tags"><li class="m-badge">Gameplay mechanics</li><li class="m-badge">Collision detection</li><li class="m-badge">Level progression</li><li class="m-badge">UI/UX flows</li><li class="m-badge">Bug reporting</li></ul>
       </div>
       <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#1a102f" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="Game testing and mechanics validation across gaming hardware and devices" loading="lazy"></div>
       <span class="service__shade" aria-hidden="true"></span>
@@ -753,8 +722,8 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     <li class="service m-surface">
       <div class="service__text">
         <h3 class="m-text-4">Automation Engineering</h3>
-        <p class="m-text-5 service__line">Build maintainable automated test cases, improve existing suites, and integrate testing into your workflows using Playwright, Cypress, or Selenium with clear execution instructions and test reports.</p>
-        <ul class="service__tags"><li class="m-badge">Playwright</li><li class="m-badge">Cypress</li><li class="m-badge">Selenium</li><li class="m-badge">CI/CD integration</li></ul>
+        <p class="m-text-5 service__line">Build maintainable automated checks, improve existing suites, and execute scoped test runs using Selenium, Playwright, or Cypress with structured documentation and execution reports.</p>
+        <ul class="service__tags"><li class="m-badge">Selenium</li><li class="m-badge">Playwright</li><li class="m-badge">Cypress</li><li class="m-badge">Scoped test suites</li></ul>
       </div>
       <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#260c40" src="https://images.unsplash.com/photo-1769675353367-e581059c7c43?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8YWJzdHJhY3QlMjBsaWdodCUyMHRyYWlscyUyMGRhcmslMjB2aW9sZXR8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="Test automation engineering and CI CD pipeline verification" loading="lazy"></div>
       <span class="service__shade" aria-hidden="true"></span>
@@ -766,7 +735,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 <section id="method" data-8b-section="method" aria-labelledby="method-title">
   <div class="method__head">
     <h2 class="m-text-3" id="method-title" data-8b-motion="rise">How we work<span class="m-dot" aria-hidden="true"></span></h2>
-    <p class="m-text-5 method__lead" data-8b-motion="ink">A disciplined five-part quality loop engineered for clarity, speed, and zero surprise regressions on release day.</p>
+    <p class="m-text-5 method__lead" data-8b-motion="ink">A practical four-step quality cycle designed for clear communication, structured defect reporting, and dependable test coverage.</p>
   </div>
   <div class="method__body">
     <div class="method__ring" aria-hidden="true">
@@ -778,56 +747,48 @@ textarea.m-field { min-height: 112px; resize: vertical; }
       <span class="method__arm"><span class="method__runner"></span></span>
     </div>
     <ol class="method__steps">
-      <li class="step"><h3 class="m-text-4">Understand</h3><p class="m-text-5 step__text">We review requirements, architecture, critical user journeys, and potential edge failure points before defining target environments and acceptance criteria.</p></li>
-      <li class="step"><h3 class="m-text-4">Plan &amp; Test</h3><p class="m-text-5 step__text">We execute agreed manual, functional, UI, API, mobile, or automated testing against target staging and production environments.</p></li>
-      <li class="step"><h3 class="m-text-4">Report &amp; Retest</h3><p class="m-text-5 step__text">We document defects with clear reproduction steps and evidence, then retest every resolved issue to guarantee clean fixes.</p></li>
-      <li class="step"><h3 class="m-text-4">Improve</h3><p class="m-text-5 step__text">We deliver weekly progress reports, defect trends, and risk summaries while expanding automation suites within agreed hours.</p></li>
+      <li class="step"><h3 class="m-text-4">Understand</h3><p class="m-text-5 step__text">Discuss the product, critical workflows, and testing priorities.</p></li>
+      <li class="step"><h3 class="m-text-4">Plan &amp; Test</h3><p class="m-text-5 step__text">Agree on scope and execute the selected manual, API, mobile, game, or automation tests.</p></li>
+      <li class="step"><h3 class="m-text-4">Report &amp; Retest</h3><p class="m-text-5 step__text">Provide reproducible findings and retest fixes within the agreed scope.</p></li>
+      <li class="step"><h3 class="m-text-4">Improve</h3><p class="m-text-5 step__text">Share weekly progress reports and identify practical next steps.</p></li>
     </ol>
   </div>
 </section>
 
-<!-- studio: team and careers: photo collage that deals out from a pile, with open roles (animation: scene:studio) -->
-<section id="studio" data-8b-section="studio" aria-labelledby="studio-title">
-  <div class="studio__head">
-    <h2 class="m-text-3" id="studio-title">Inside the studio<span class="m-dot" aria-hidden="true"></span></h2>
-    <p class="m-text-5 studio__lead" data-8b-motion="ink">A dedicated team of manual test specialists, SDETs, and automation engineers partnering directly with product teams. We test on real hardware, integrate with your Jira and Slack, and treat automated test suites with the same engineering rigor as production code.</p>
+<!-- team: Meet Our Team section -->
+<section id="team" data-8b-section="team" aria-labelledby="team-title">
+  <div class="team__head">
+    <p class="m-badge" data-8b-motion="rise">Core QA Specialists</p>
+    <h2 class="m-text-3" id="team-title" data-8b-motion="rise">Meet Our Team<span class="m-dot" aria-hidden="true"></span></h2>
+    <p class="m-text-5 team__lead" data-8b-motion="ink">We are an independent quality assurance team with 4.5 years of collective QA experience across web applications, APIs, mobile platforms, and games.</p>
   </div>
-  <div class="studio__collage">
-    <figure class="shot shot--wide"><img srcset="https://images.unsplash.com/photo-1787647559705-d2ad3322020e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=233&amp;q=80 350w, https://images.unsplash.com/photo-1787647559705-d2ad3322020e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=410&amp;h=273&amp;q=80 410w, https://images.unsplash.com/photo-1787647559705-d2ad3322020e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=460&amp;q=80 690w, https://images.unsplash.com/photo-1787647559705-d2ad3322020e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80 960w" sizes="(max-width: 767px) 91vw, 32vw" style="background:#8c8c8c" src="https://images.unsplash.com/photo-1787647559705-d2ad3322020e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1400&amp;h=933&amp;q=80" width="1400" height="933" alt="QA team collaborating on test plans and defect logs" loading="lazy"></figure>
-    <figure class="shot shot--tall"><img srcset="https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=170&amp;h=227&amp;q=80 170w, https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=230&amp;h=307&amp;q=80 230w, https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=340&amp;h=453&amp;q=80 340w, https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=533&amp;q=80 400w, https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=853&amp;q=80 640w" sizes="(max-width: 767px) 44vw, 18vw" style="background:#f3c0a6" src="https://images.unsplash.com/photo-1643373977342-73cfc7cc0c5e?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1200&amp;q=80" width="900" height="1200" alt="Two engineers discussing bug reproduction steps" loading="lazy"></figure>
-    <figure class="shot shot--tall"><img srcset="https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=170&amp;h=227&amp;q=80 170w, https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=240&amp;h=320&amp;q=80 240w, https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=340&amp;h=453&amp;q=80 340w, https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=533&amp;q=80 400w, https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=853&amp;q=80 640w" sizes="(max-width: 767px) 44vw, 19vw" style="background:#a68c73" src="https://images.unsplash.com/photo-1745434159123-4908d0b9df94?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NHx8cGVvcGxlJTIwbGF1Z2hpbmclMjBvZmZpY2V8ZW58MXwxfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1200&amp;q=80" width="900" height="1200" alt="Test automation specialist reviewing code" loading="lazy"></figure>
-    <figure class="shot shot--wide"><img srcset="https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=233&amp;q=80 350w, https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=267&amp;q=80 400w, https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=490&amp;h=327&amp;q=80 490w, https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=460&amp;q=80 690w, https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80 960w, https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1280&amp;h=853&amp;q=80 1280w" sizes="(max-width: 767px) 91vw, 38vw" style="background:#737359" src="https://images.unsplash.com/photo-1787647560262-ebfcf6c5f979?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8Y3JlYXRpdmUlMjB0ZWFtJTIwbWVldGluZyUyMHN0dWRpb3xlbnwxfDB8fHwxNzkxMjA5NzQ5fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1400&amp;h=933&amp;q=80" width="1400" height="933" alt="Sprint retrospective and release verification review" loading="lazy"></figure>
-    <figure class="shot shot--wide"><img srcset="https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=233&amp;q=80 350w, https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=430&amp;h=287&amp;q=80 430w, https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=460&amp;q=80 690w, https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=860&amp;h=573&amp;q=80 860w, https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=640&amp;q=80 960w" sizes="(max-width: 767px) 91vw, 34vw" style="background:#a6a6a6" src="https://images.unsplash.com/photo-1623652653308-d49d335c92eb?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1400&amp;h=933&amp;q=80" width="1400" height="933" alt="Test matrix and bug taxonomy categorization session" loading="lazy"></figure>
-    <div class="studio__roles">
-      <h3 class="m-text-7" data-8b-motion="rise">Engineering standards<span class="m-dot" aria-hidden="true"></span></h3>
-      <ul>
-        <li class="role"><span class="m-text-7">Zero flakiness tolerance</span><span class="m-text-6 role__place">Resilient locators</span></li>
-        <li class="role"><span class="m-text-7">High-signal defect tickets</span><span class="m-text-6 role__place">Full repro &amp; video</span></li>
-        <li class="role"><span class="m-text-7">100% Client IP ownership</span><span class="m-text-6 role__place">Your repository</span></li>
-      </ul>
-      <p class="m-text-6" style="margin-top: 6px; color: var(--color-6); line-height: 1.5;">100% remote senior engineering team dedicated to shipping defect-free releases worldwide.</p>
-    </div>
+  <div class="team__grid">
+    <article class="team-card m-surface" data-8b-motion="rise">
+      <div class="team-card__avatar">
+        <span class="team-card__initials">R</span>
+      </div>
+      <h3 class="m-text-4 team-card__name">Rishish</h3>
+      <p class="team-card__role">QA Team Member</p>
+    </article>
+    <article class="team-card m-surface" data-8b-motion="rise">
+      <div class="team-card__avatar">
+        <span class="team-card__initials">C</span>
+      </div>
+      <h3 class="m-text-4 team-card__name">Chandan</h3>
+      <p class="team-card__role">QA Team Member</p>
+    </article>
+    <article class="team-card m-surface" data-8b-motion="rise">
+      <div class="team-card__avatar">
+        <span class="team-card__initials">A</span>
+      </div>
+      <h3 class="m-text-4 team-card__name">Amit</h3>
+      <p class="team-card__role">QA Team Member</p>
+    </article>
   </div>
-</section>
-
-<!-- journal: news and articles: four stories beside a sticky photo frame (animation: scene:journal) -->
-<section id="journal" data-8b-section="journal" aria-labelledby="journal-title">
-  <div class="journal__head">
-    <h2 class="m-text-3" id="journal-title" data-8b-motion="rise">Ideas and news<span class="m-dot" aria-hidden="true"></span></h2>
-  </div>
-  <div class="journal__body">
-    <div class="journal__frame">
-      <img srcset="https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=510&amp;h=638&amp;q=80 510w, https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80 1000w" sizes="(max-width: 767px) 91vw, 39vw" style="background:#260c0c" class="journal__shot" src="https://images.unsplash.com/photo-1769755409781-9e8924c57362?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8Y29uZmVyZW5jZSUyMHN0YWdlJTIwYXVkaWVuY2UlMjBsaWdodHN8ZW58MXwwfHx8MTc5MTIwOTc3M3ww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80" width="1000" height="1250" alt="Testing automation presentation and talk" loading="lazy">
-      <img srcset="https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=510&amp;h=638&amp;q=80 510w, https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80 1000w" sizes="(max-width: 767px) 91vw, 39vw" style="background:#f3f3f3" class="journal__shot" src="https://images.unsplash.com/photo-1783094269325-4ba186e8e01b?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8c2VydmljZSUyMGRlc2slMjBjdXN0b21lciUyMHNtaWxpbmd8ZW58MXwwfHx8MTc5MTIwOTc3NXww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80" width="1000" height="1250" alt="Software engineer analyzing test execution logs" loading="lazy">
-      <img srcset="https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=510&amp;h=638&amp;q=80 510w, https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80 1000w" sizes="(max-width: 767px) 91vw, 39vw" style="background:#d9a60c" class="journal__shot" src="https://images.unsplash.com/photo-1581080247486-57989c1f14ab?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8NXx8cHJpbnRlZCUyMG1hZ2F6aW5lJTIwcGFnZXMlMjB0eXBvZ3JhcGh5fGVufDF8MHx8fDE3OTEyMDk3NzR8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80" width="1000" height="1250" alt="Code structure and testing framework architecture" loading="lazy">
-      <img srcset="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=510&amp;h=638&amp;q=80 510w, https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80 1000w" sizes="(max-width: 767px) 91vw, 39vw" style="background:#d9c0a6" class="journal__shot" src="https://images.unsplash.com/photo-1542626991-cbc4e32524cc?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Mnx8d29ya3Nob3AlMjBzdGlja3klMjBub3RlcyUyMHdhbGx8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1000&amp;h=1250&amp;q=80" width="1000" height="1250" alt="Mobile matrix testing and regression notes" loading="lazy">
-    </div>
-    <ol class="journal__list">
-      <li class="story"><p class="m-text-6 story__meta"><span>Automation</span> · <time datetime="2026-10-01">1 October 2026</time> · 4 min read</p><h3 class="m-text-7">Why UI tests fail on modern SPAs — and how resilient locators fix it</h3><p class="m-text story__text">Best practices for auto-waiting, role-based selectors, and eliminating test flakiness in Playwright and Cypress end-to-end suites.</p></li>
-      <li class="story"><p class="m-text-6 story__meta"><span>QA Strategy</span> · <time datetime="2026-09-18">18 September 2026</time> · 5 min read</p><h3 class="m-text-7">The hidden cost of untested edge cases in B2B SaaS onboarding</h3><p class="m-text story__text">How validating multi-tenant workflows and authorization states early prevents revenue-impacting user churn on launch day.</p></li>
-      <li class="story"><p class="m-text-6 story__meta"><span>Frameworks</span> · <time datetime="2026-08-30">30 August 2026</time> · 6 min read</p><h3 class="m-text-7">Cypress vs Playwright: a practical engineering comparison</h3><p class="m-text story__text">Evaluating test speed, native WebKit emulation, parallelization costs, and developer ergonomics across real-world continuous integration.</p></li>
-      <li class="story"><p class="m-text-6 story__meta"><span>Mobile QA</span> · <time datetime="2026-08-04">4 August 2026</time> · 5 min read</p><h3 class="m-text-7">Real devices vs emulators: building a sane mobile regression matrix</h3><p class="m-text story__text">What we learned testing iOS and Android builds across varying screen densities, hardware throttling, and variable network conditions.</p></li>
-    </ol>
+  <div class="team__highlight m-surface" data-8b-motion="ink">
+    <p class="m-text-6 team__highlight-badge">Collective Experience</p>
+    <p class="m-text-4 team__highlight-title">4.5 years of collective QA experience</p>
+    <p class="m-text-5 team__highlight-text">Hands-on testing across manual functional checks, UI/cross-browser compatibility, API verification, mobile flows, game mechanics, and test automation with Selenium, Playwright, and Cypress.</p>
   </div>
 </section>
 
@@ -836,10 +797,10 @@ textarea.m-field { min-height: 112px; resize: vertical; }
   <div class="pricing__head">
     <div>
       <h2 class="m-text-3" id="pricing-title" data-8b-motion="rise">Plans and pricing<span class="m-dot" aria-hidden="true"></span></h2>
-      <p class="m-text pricing__lead">Transparent starting rates for startups and scaling engineering teams. Choose an agile trial or predictable monthly QA capacity.</p>
+      <p class="m-text pricing__lead">Transparent starting rates in USD. Choose a focused one-time trial or predictable monthly QA capacity with strict project limits.</p>
     </div>
     <div class="pricing__toggle-group" role="group" aria-label="Testing type toggle">
-      <button type="button" class="pricing__toggle-btn is-active" id="pricing-toggle-manual" data-mode="manual">Without Automation</button>
+      <button type="button" class="pricing__toggle-btn is-active" id="pricing-toggle-manual" data-mode="manual">Manual QA</button>
       <button type="button" class="pricing__toggle-btn" id="pricing-toggle-auto" data-mode="auto">With Automation</button>
     </div>
   </div>
@@ -847,82 +808,100 @@ textarea.m-field { min-height: 112px; resize: vertical; }
   <div class="pricing__grid">
     <!-- Trial QA Plan -->
     <article class="plan-card">
-      <span class="plan-card__badge" style="background:var(--color-6)">Starter</span>
-      <h3 class="plan-card__name">Trial QA Plan</h3>
-      <p class="plan-card__scope">1 core flow or feature</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <span class="plan-card__badge" style="background:var(--color-6)">Trial QA</span>
+        <span class="plan-card__limit">1 project</span>
+      </div>
+      <h3 class="plan-card__name">Trial QA</h3>
+      <p class="plan-card__scope">One-time assessment audit</p>
       <div class="plan-card__price-box">
         <span class="plan-card__amount">$149</span>
         <span class="plan-card__period">/ one-time</span>
-        <div class="plan-card__alt">Single assessment audit</div>
+        <div class="plan-card__alt">Initial manual assessment</div>
       </div>
-      <p class="plan-card__desc">Low-risk starter audit to evaluate our testing rigor, bug reproduction quality, and reporting speed.</p>
+      <p class="plan-card__desc">A one-time introductory assessment to evaluate our testing rigor, defect reporting, and communication before committing to a monthly plan.</p>
       <ul class="plan-card__list">
-        <li class="plan-card__item">1 core user flow thoroughly audited</li>
-        <li class="plan-card__item">Comprehensive test summary report</li>
-        <li class="plan-card__item">Detailed bug tickets with repro steps &amp; video</li>
-        <li class="plan-card__item">Fast 48-hour delivery turn-around</li>
-        <li class="plan-card__item">Regression retesting on fixed issues</li>
+        <li class="plan-card__item">One project only</li>
+        <li class="plan-card__item">One core flow or feature</li>
+        <li class="plan-card__item">Initial manual assessment</li>
+        <li class="plan-card__item">Structured findings and reproducible bug reports</li>
+        <li class="plan-card__item">No regression retesting included</li>
       </ul>
-      <a class="m-btn plan-card__cta" href="#contact" data-plan="trial"><span class="m-btn__label">Request Trial ($149)</span></a>
+      <a class="m-btn plan-card__cta" href="#contact" data-plan="trial"><span class="m-btn__label">Discuss Trial ($149)</span></a>
     </article>
 
     <!-- Monthly Basic -->
     <article class="plan-card">
-      <h3 class="plan-card__name">Monthly Basic</h3>
-      <p class="plan-card__scope">10 hours / month</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <span class="plan-card__badge" style="background:var(--color-6)">30 Hours / Mo</span>
+        <span class="plan-card__limit">1 project</span>
+      </div>
+      <h3 class="plan-card__name">Basic</h3>
+      <p class="plan-card__scope">30 hours / month</p>
       <div class="plan-card__price-box">
         <span class="plan-card__amount" data-plan="basic" data-manual="$299" data-auto="$449">$299</span>
         <span class="plan-card__period">/ month</span>
-        <div class="plan-card__alt" data-alt="basic">Without automation (Manual QA)</div>
+        <div class="plan-card__alt" data-alt="basic">Manual QA</div>
       </div>
-      <p class="plan-card__desc">Essential ongoing coverage for early-stage products and active staging regression before bi-weekly releases.</p>
+      <p class="plan-card__desc">Essential ongoing coverage for early-stage products and focused release validation.</p>
       <ul class="plan-card__list">
-        <li class="plan-card__item">10 engineering testing hours per month</li>
-        <li class="plan-card__item">Manual functional &amp; UI exploratory testing</li>
-        <li class="plan-card__item">Structured bug logging &amp; regression re-tests</li>
-        <li class="plan-card__item plan-card__auto-feature" data-manual="Manual functional &amp; edge-case regression" data-auto="Playwright / Cypress automated checks">Manual functional &amp; edge-case regression</li>
-        <li class="plan-card__item">Dedicated Slack / async channel support</li>
+        <li class="plan-card__item">One project only</li>
+        <li class="plan-card__item">30 total testing hours per month (total capacity, not per project)</li>
+        <li class="plan-card__item">Scoped functional, exploratory, and regression testing</li>
+        <li class="plan-card__item">Weekly progress reports</li>
+        <li class="plan-card__item">Retesting reported defects after fixes, within the plan's monthly hours</li>
+        <li class="plan-card__item plan-card__auto-feature" data-manual="Manual functional &amp; regression checks" data-auto="Automation option: scoped Selenium, Playwright, or Cypress checks">Manual functional &amp; regression checks</li>
       </ul>
       <a class="m-btn plan-card__cta" href="#contact" data-plan="basic"><span class="m-btn__label">Choose Basic ($299)</span></a>
     </article>
 
     <!-- Monthly Pro (Recommended) -->
     <article class="plan-card plan-card--featured">
-      <span class="plan-card__badge">Recommended Plan</span>
-      <h3 class="plan-card__name">Monthly Pro</h3>
-      <p class="plan-card__scope">25 hours / month</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <span class="plan-card__badge">Recommended</span>
+        <span class="plan-card__limit">1 project</span>
+      </div>
+      <h3 class="plan-card__name">Pro</h3>
+      <p class="plan-card__scope">45 hours / month</p>
       <div class="plan-card__price-box">
         <span class="plan-card__amount" data-plan="pro" data-manual="$699" data-auto="$899">$699</span>
         <span class="plan-card__period">/ month</span>
-        <div class="plan-card__alt" data-alt="pro">Without automation (Manual QA)</div>
+        <div class="plan-card__alt" data-alt="pro">Manual QA</div>
       </div>
-      <p class="plan-card__desc">Comprehensive QA integration for scaling SaaS and consumer apps deploying multiple times per sprint.</p>
+      <p class="plan-card__desc">Comprehensive QA coverage for active development cycles and scheduled sprint releases.</p>
       <ul class="plan-card__list">
-        <li class="plan-card__item">25 engineering testing hours per month</li>
-        <li class="plan-card__item">Full regression suite &amp; API endpoint testing</li>
-        <li class="plan-card__item plan-card__auto-feature" data-manual="High-priority manual &amp; API test suites" data-auto="Continuous CI/CD pipeline test automation">High-priority manual &amp; API test suites</li>
-        <li class="plan-card__item">Multi-device &amp; cross-browser coverage matrix</li>
-        <li class="plan-card__item">Priority response time &amp; sprint alignment</li>
+        <li class="plan-card__item">One project only</li>
+        <li class="plan-card__item">45 total testing hours per month (total capacity, not per project)</li>
+        <li class="plan-card__item">Broader functional and regression coverage</li>
+        <li class="plan-card__item">API testing where agreed</li>
+        <li class="plan-card__item">Weekly progress reports</li>
+        <li class="plan-card__item">Retesting reported defects after fixes, within the plan's monthly hours</li>
+        <li class="plan-card__item plan-card__auto-feature" data-manual="Manual functional, UI &amp; agreed API tests" data-auto="Scoped automation development or maintenance (Selenium, Playwright, Cypress)">Manual functional, UI &amp; agreed API tests</li>
       </ul>
       <a class="m-btn plan-card__cta" href="#contact" data-plan="pro"><span class="m-btn__label">Choose Pro ($699)</span></a>
     </article>
 
     <!-- Monthly Growth -->
     <article class="plan-card">
-      <h3 class="plan-card__name">Monthly Growth</h3>
-      <p class="plan-card__scope">50 hours / month</p>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+        <span class="plan-card__badge" style="background:var(--color-6)">60 Hours / Mo</span>
+        <span class="plan-card__limit" id="growth-project-limit">1 project</span>
+      </div>
+      <h3 class="plan-card__name">Growth</h3>
+      <p class="plan-card__scope">60 hours / month</p>
       <div class="plan-card__price-box">
         <span class="plan-card__amount" data-plan="growth" data-manual="$1,299" data-auto="$1,699">$1,299</span>
         <span class="plan-card__period">/ month</span>
-        <div class="plan-card__alt" data-alt="growth">Without automation (Manual QA)</div>
+        <div class="plan-card__alt" data-alt="growth">Manual QA</div>
       </div>
-      <p class="plan-card__desc">Dedicated QA engineering bandwidth for high-velocity teams needing continuous test ops and fast releases.</p>
+      <p class="plan-card__desc">High-capacity testing bandwidth for teams managing continuous releases across core workflows.</p>
       <ul class="plan-card__list">
-        <li class="plan-card__item">50 engineering testing hours per month</li>
-        <li class="plan-card__item plan-card__auto-feature" data-manual="Dedicated exploratory &amp; regression team" data-auto="End-to-end automated test suites in CI/CD">Dedicated exploratory &amp; regression team</li>
-        <li class="plan-card__item">Cross-platform Web &amp; Mobile app testing</li>
-        <li class="plan-card__item">Performance benchmarking &amp; security hygiene</li>
-        <li class="plan-card__item">Dedicated SDET lead with custom reporting</li>
+        <li class="plan-card__item" id="growth-project-scope">1 project only (up to 3 projects with automation)</li>
+        <li class="plan-card__item">60 total testing hours per month (total capacity shared across included projects, not 60 hours per project)</li>
+        <li class="plan-card__item">Cross-project prioritization agreed at kickoff</li>
+        <li class="plan-card__item">Weekly progress reports</li>
+        <li class="plan-card__item">Retesting reported defects after fixes, within the plan's monthly hours</li>
+        <li class="plan-card__item plan-card__auto-feature" data-manual="High-volume exploratory &amp; regression sweeps" data-auto="Scoped automation development or maintenance when selected">High-volume exploratory &amp; regression sweeps</li>
       </ul>
       <a class="m-btn plan-card__cta" href="#contact" data-plan="growth"><span class="m-btn__label">Choose Growth ($1,299)</span></a>
     </article>
@@ -931,12 +910,14 @@ textarea.m-field { min-height: 112px; resize: vertical; }
   <div class="pricing__conditions">
     <h3 class="pricing__conditions-title">Pricing terms &amp; conditions</h3>
     <div class="pricing__conditions-grid">
-      <div class="pricing__condition-item">Starting rates shown in USD; transparent rates discussed before project kickoff.</div>
-      <div class="pricing__condition-item">Final price depends on application complexity, number of platforms, and test frequency.</div>
-      <div class="pricing__condition-item">Monthly plans include rollover protection: up to 20% unused hours roll into the next month.</div>
-      <div class="pricing__condition-item">Automation scripts delivered in your chosen repository (Playwright, Cypress, or Selenium) with 100% IP ownership.</div>
-      <div class="pricing__condition-item">No lock-in contracts; pause or cancel monthly plans anytime with 14 days notice.</div>
-      <div class="pricing__condition-item">Custom enterprise packages available for dedicated SDET teams and SOC2 compliance audits.</div>
+      <div class="pricing__condition-item">Displayed prices are starting prices in USD.</div>
+      <div class="pricing__condition-item">Each plan covers only the stated number of projects (1 project for Trial, Basic, Pro, and Growth Manual; up to 3 projects for Growth with Automation).</div>
+      <div class="pricing__condition-item">The customer and Fine-Tooth agree on scope, access, priorities, and deliverables before testing begins.</div>
+      <div class="pricing__condition-item">Monthly plans include weekly progress reports and retesting of reported defects after fixes, subject to the plan's remaining hours.</div>
+      <div class="pricing__condition-item">Unused hours do not roll over.</div>
+      <div class="pricing__condition-item">Automation work is limited by the purchased hours and agreed scope.</div>
+      <div class="pricing__condition-item">Additional projects, hours, platforms, or work outside the agreed scope require a separate quote.</div>
+      <div class="pricing__condition-item">Ownership and delivery of custom automation code should follow the agreed engagement terms.</div>
     </div>
   </div>
 </section>
@@ -946,55 +927,55 @@ textarea.m-field { min-height: 112px; resize: vertical; }
   <h2 class="m-text-3 faq__title" id="faq-title" data-8b-motion="rise">Frequently asked<span class="m-dot" aria-hidden="true"></span></h2>
   <div class="faq__list">
     <details class="faq__item">
-      <summary class="m-text-7">What is the difference between Manual QA and Automated Testing?<span class="faq__mark" aria-hidden="true"></span></summary>
-      <p class="m-text faq__answer">Manual QA focuses on human-led exploratory testing, usability evaluation, edge case discovery, and user journey validation where human judgment is critical. Automated Testing uses robust code scripts (written in Playwright, Cypress, or Selenium) to run repeatable regression and functional checks continuously inside your CI/CD pipeline, catching breaking changes within minutes of code commits.</p>
+      <summary class="m-text-7">What is manual QA versus automation?<span class="faq__mark" aria-hidden="true"></span></summary>
+      <p class="m-text faq__answer">Manual QA involves human testers exploring workflows, evaluating user experience, checking visual layouts, and discovering unexpected edge cases that automated scripts often miss. Test automation uses scripted code to run repetitive, predictable checks (such as regression suites or critical path smoke tests) quickly and reliably within development pipelines. Both approaches complement each other.</p>
     </details>
     <details class="faq__item">
-      <summary class="m-text-7">Which automation framework should we choose: Playwright, Cypress, or Selenium?<span class="faq__mark" aria-hidden="true"></span></summary>
-      <p class="m-text faq__answer">For modern web applications with rich frontends and microservices, we typically recommend Playwright due to its built-in auto-waiting, multi-tab support, native WebKit/Chromium/Firefox engine parity, and exceptional execution speed. Cypress is an outstanding choice for developer-centric teams testing single-page applications. Selenium remains the industry standard for legacy enterprise suites or multi-language backends. We support and write production-grade code for all three.</p>
+      <summary class="m-text-7">Which frameworks do you support?<span class="faq__mark" aria-hidden="true"></span></summary>
+      <p class="m-text faq__answer">We work with industry-standard web automation frameworks including Selenium, Playwright, and Cypress. We select or adapt to the framework that best aligns with your codebase, technical requirements, and internal development workflow.</p>
     </details>
     <details class="faq__item">
-      <summary class="m-text-7">How does the $149 Trial QA Plan work?<span class="faq__mark" aria-hidden="true"></span></summary>
-      <p class="m-text faq__answer">The Trial QA Plan is a low-risk, one-time audit designed for new partners. You provide access to staging or production for a single core flow (e.g., user signup, checkout, or critical onboarding workflow). Within 48 hours, our QA engineers execute rigorous manual testing, log discovered defects with full reproduction steps and video recordings, and deliver a comprehensive test assessment report.</p>
+      <summary class="m-text-7">What does the $149 trial include?<span class="faq__mark" aria-hidden="true"></span></summary>
+      <p class="m-text faq__answer">The $149 Trial QA plan is a one-time assessment covering one project and one core flow or feature. It provides an initial manual assessment, structured findings, and reproducible bug reports with steps and screenshots. It does not include regression retesting, ongoing support, or automated testing.</p>
     </details>
     <details class="faq__item">
-      <summary class="m-text-7">Do you test mobile applications as well as websites?<span class="faq__mark" aria-hidden="true"></span></summary>
-      <p class="m-text faq__answer">Yes. We test responsive web applications, progressive web apps (PWAs), native iOS applications, and native Android applications. For mobile apps, we validate installation, gesture navigation, push notifications, offline mode, backgrounding behavior, and OS permission flows across real physical devices and simulator matrices.</p>
+      <summary class="m-text-7">Which project limits apply to each plan?<span class="faq__mark" aria-hidden="true"></span></summary>
+      <p class="m-text faq__answer">The Trial QA ($149 one-time), Basic ($299 or $449/mo), Pro ($699 or $899/mo), and Growth Manual ($1,299/mo) plans each cover exactly one project. The Growth with Automation plan ($1,699/mo) covers up to three projects. Additional projects require a separate plan or a customized quote.</p>
     </details>
     <details class="faq__item">
-      <summary class="m-text-7">How do you integrate with our existing team and issue trackers?<span class="faq__mark" aria-hidden="true"></span></summary>
-      <p class="m-text faq__answer">We embed directly into your engineering workflows. We file structured, high-signal bug tickets directly into your Jira, GitHub Issues, Linear, or ClickUp board with precise reproduction steps, browser/device environment specs, network logs, and video captures. We also participate in async Slack/Discord communication and sprint planning.</p>
+      <summary class="m-text-7">How are monthly hours divided across projects?<span class="faq__mark" aria-hidden="true"></span></summary>
+      <p class="m-text faq__answer">Monthly hour allocations represent total testing hours per month for the selected plan, not hours per project. On the Growth plan with automation (which covers up to three projects), the 60 total monthly testing hours are shared across the included projects, not allocated as 60 hours per project. Cross-project priorities and hour allocations are agreed upon at project kickoff and tracked in weekly progress reports.</p>
     </details>
     <details class="faq__item">
-      <summary class="m-text-7">Who owns the automated test scripts?<span class="faq__mark" aria-hidden="true"></span></summary>
-      <p class="m-text faq__answer">You do. 100%. All test suites, helper utilities, page object models, configuration files, and CI/CD pipelines created during our engagement are committed directly to your version control repository under your organization&apos;s license. There is zero vendor lock-in.</p>
+      <summary class="m-text-7">Are retesting and weekly reports included?<span class="faq__mark" aria-hidden="true"></span></summary>
+      <p class="m-text faq__answer">Yes, for all monthly plans (Basic, Pro, and Growth). Monthly plans include weekly progress reports and retesting of reported defects after fixes are deployed, subject to the plan's remaining hours. The one-time $149 Trial QA plan does not include regression retesting.</p>
     </details>
     <details class="faq__item">
-      <summary class="m-text-7">What happens if we need more or fewer hours in a given month?<span class="faq__mark" aria-hidden="true"></span></summary>
-      <p class="m-text faq__answer">Our monthly plans offer flexibility. Up to 20% of unused hours automatically roll over to the following billing cycle. If your team enters a major launch sprint and requires additional testing bandwidth, you can top up capacity at your plan&apos;s standard hourly rate or upgrade seamlessly with no penalty.</p>
+      <summary class="m-text-7">What happens when the monthly hours are exhausted?<span class="faq__mark" aria-hidden="true"></span></summary>
+      <p class="m-text faq__answer">Once your purchased monthly hours are reached, further testing pauses until the next billing cycle begins unless you request additional scoped hours under a separate quote. Unused hours do not roll over from one month to the next.</p>
     </details>
     <details class="faq__item">
-      <summary class="m-text-7">Can you help set up automated testing inside our CI/CD pipeline?<span class="faq__mark" aria-hidden="true"></span></summary>
-      <p class="m-text faq__answer">Absolutely. When automation is included in your plan, we don&apos;t just write scripts locally; we integrate test execution into GitHub Actions, GitLab CI, CircleCI, or Bitbucket Pipelines. We configure headless parallel runs, failure artifacts (screenshots and traces), and pull request status checks so no breaking bug reaches production.</p>
+      <summary class="m-text-7">Do you test websites, APIs, mobile apps, and games?<span class="faq__mark" aria-hidden="true"></span></summary>
+      <p class="m-text faq__answer">Yes. We provide testing services across responsive web applications, REST APIs and integration points, mobile applications (iOS and Android viewports), and 2D/3D indie and mobile games including gameplay mechanics and progression validation.</p>
     </details>
     <details class="faq__item">
-      <summary class="m-text-7">How quickly can Fine Tooth begin testing our software?<span class="faq__mark" aria-hidden="true"></span></summary>
-      <p class="m-text faq__answer">Trial QA audits and monthly onboarding typically kick off within 1 to 2 business days of access confirmation. After a brief discovery call to align on priorities and test environment credentials, our engineers immediately begin test planning and exploratory sweeps.</p>
+      <summary class="m-text-7">How is custom automation code delivered and owned?<span class="faq__mark" aria-hidden="true"></span></summary>
+      <p class="m-text faq__answer">Automation code is developed according to the agreed engagement scope. Code ownership, repository delivery, and handover details follow the specific engagement terms agreed upon prior to project kickoff.</p>
     </details>
   </div>
 </section>
 
-<!-- contact: violet contact field: big "Let's talk", email, two offices with phones, and a form (animation: scene:contact) -->
+<!-- contact: violet contact field: big "Let's talk", email, and a form (animation: scene:contact) -->
 <section id="contact" data-8b-section="contact" aria-labelledby="contact-title">
   <h2 class="m-text-3 contact__title" id="contact-title" style="--len:10"><span class="contact__voice">Let's talk</span><span class="m-dot" aria-hidden="true"></span></h2>
   <div class="contact__grid">
     <div class="contact__info">
-      <p class="m-text-5 contact__lead">Tell us about your application, testing stack, or release timelines. A senior QA engineer reviews every inquiry and replies within two business days.</p>
+      <p class="m-text-5 contact__lead">Tell us about your application, testing priorities, or release timeline. We review every inquiry and reply within two business days.</p>
       <a class="contact__mail" href="mailto:hello@finetooth.example"><span>hello@finetooth.example</span></a>
       <div class="contact__places" style="margin-top: 20px;">
         <div>
           <p class="m-text-7" style="margin-bottom: 6px;">Remote Worldwide</p>
-          <p class="m-text" style="color: color-mix(in srgb, var(--color-2) 80%, transparent); line-height: 1.5;">Operating 100% remotely. Collaborating seamlessly with engineering and product teams across US, European, and global time zones.</p>
+          <p class="m-text" style="color: color-mix(in srgb, var(--color-2) 80%, transparent); line-height: 1.5;">Operating 100% remotely. Collaborating with product and development teams across global time zones.</p>
         </div>
       </div>
     </div>
@@ -1007,12 +988,11 @@ textarea.m-field { min-height: 112px; resize: vertical; }
         <label class="m-text-6">Company or product<input class="m-field" name="company" type="text" autocomplete="organization" placeholder="Acme Inc."></label>
         <label class="m-text-6">What can we help with?<select class="m-field" name="topic" id="contact-topic">
           <option value="Discuss Project">Discuss Your Project</option>
-          <option value="Trial QA Plan ($149)">Request a QA Trial ($149)</option>
-          <option value="Game Testing & Mechanics">Game Testing &amp; Mechanics Validation</option>
+          <option value="Trial QA Plan ($149)">Trial QA Plan ($149)</option>
           <option value="Monthly Basic Plan">Monthly Basic Plan ($299 / $449)</option>
           <option value="Monthly Pro Plan">Monthly Pro Plan ($699 / $899)</option>
           <option value="Monthly Growth Plan">Monthly Growth Plan ($1,299 / $1,699)</option>
-          <option value="Custom Enterprise SDET">Custom Enterprise / SDET Quote</option>
+          <option value="Game Testing & Mechanics">Game Testing &amp; Mechanics Validation</option>
         </select></label>
       </div>
       <div class="contact__pair">
@@ -1021,7 +1001,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
           <option value="Mobile App">Mobile App (iOS / Android)</option>
           <option value="Game (Mobile / Desktop / WebGL)">Game (Mobile / Desktop / WebGL)</option>
           <option value="API & Backend">API &amp; Backend Services</option>
-          <option value="Cross-Platform">Cross-Platform / Full Stack</option>
+          <option value="Cross-Platform">Cross-Platform</option>
         </select></label>
         <label class="m-text-6">Preferred framework<select class="m-field" name="framework">
           <option value="Playwright">Playwright</option>
@@ -1033,13 +1013,13 @@ textarea.m-field { min-height: 112px; resize: vertical; }
       </div>
       <div class="contact__pair">
         <label class="m-text-6" style="grid-column:1 / -1">Expected scope &amp; timeline<select class="m-field" name="scope">
-          <option value="Immediate Trial">Immediate 48-Hour Trial Audit</option>
+          <option value="One-Time Trial">One-Time Trial Assessment</option>
           <option value="Ongoing Monthly QA">Ongoing Monthly QA &amp; Regression</option>
-          <option value="Pre-launch Sprint">Pre-launch Intensive Regression Sprint</option>
-          <option value="CI/CD Automation Pipeline">Test Automation Pipeline Setup</option>
+          <option value="Pre-launch Sprint">Pre-launch Regression Sprint</option>
+          <option value="Test Automation">Test Automation Implementation</option>
         </select></label>
       </div>
-      <label class="m-text-6">Project details &amp; goals<textarea class="m-field" name="message" rows="3" required placeholder="Describe your product, current test bottlenecks, or release deadlines..."></textarea></label>
+      <label class="m-text-6">Project details &amp; goals<textarea class="m-field" name="message" rows="3" required placeholder="Describe your product, current testing needs, or upcoming release timelines..."></textarea></label>
       <div class="contact__actions">
         <button class="m-btn" type="submit"><span class="m-btn__label">Send message</span></button>
         <p class="m-text contact__status" role="status" aria-live="polite" data-success="Thank you. We will reply within two working days." data-error="Please add your name, a valid email and a few words about your testing needs."></p>
@@ -1060,7 +1040,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
       <a class="m-link-2" href="#capabilities">Services</a>
       <a class="m-link-2" href="#method">Approach</a>
       <a class="m-link-2" href="#pricing">Pricing</a>
-      <a class="m-link-2" href="#studio">Studio</a>
+      <a class="m-link-2" href="#team">Team</a>
       <a class="m-link-2" href="#faq">FAQ</a>
     </nav>
     <div class="footer__col">
@@ -1440,11 +1420,16 @@ queueMotion(() => {
         el.textContent = isAuto ? el.dataset.auto : el.dataset.manual;
       });
       document.querySelectorAll('.plan-card__alt[data-alt]').forEach(el => {
-        el.textContent = isAuto ? 'With test automation included' : 'Without automation (Manual QA)';
+        el.textContent = isAuto ? 'With test automation included' : 'Manual QA';
       });
       document.querySelectorAll('.plan-card__auto-feature').forEach(el => {
         el.innerHTML = isAuto ? el.dataset.auto : el.dataset.manual;
       });
+      const limitGrowth = document.getElementById('growth-project-limit');
+      if (limitGrowth) limitGrowth.textContent = isAuto ? 'Up to 3 projects' : '1 project';
+      const scopeGrowth = document.getElementById('growth-project-scope');
+      if (scopeGrowth) scopeGrowth.textContent = isAuto ? 'Up to 3 projects included' : '1 project only (up to 3 projects with automation)';
+
       const ctaBasic = document.querySelector('.plan-card__cta[data-plan="basic"] .m-btn__label');
       const ctaPro = document.querySelector('.plan-card__cta[data-plan="pro"] .m-btn__label');
       const ctaGrowth = document.querySelector('.plan-card__cta[data-plan="growth"] .m-btn__label');
@@ -1521,38 +1506,6 @@ queueMotion(() => {
   });
   if ('IntersectionObserver' in window) new IntersectionObserver(([entry]) => footer.classList.toggle('is-offscreen', !entry.isIntersecting)).observe(footer);
 })();
-</script>
-<script data-8b-part="scene:studio">
-queueMotion(() => {
-  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
-    const collage = document.querySelector('#studio .studio__collage');
-    const shots = [...collage.querySelectorAll('.shot')];
-    const tilt = [-8, 6, -4, 9, -6];
-    const offset = (shot, axis) => {
-      const centre = axis === 'x' ? collage.offsetWidth / 2 : Math.min(collage.offsetHeight / 2, innerHeight * 0.45);
-      const own = axis === 'x' ? shot.offsetLeft + shot.offsetWidth / 2 : shot.offsetTop + shot.offsetHeight / 2;
-      return centre - own;
-    };
-    const timeline = gsap.timeline({ defaults: { ease: 'power2.out' }, scrollTrigger: { id: 'studio', trigger: collage, start: 'top 82%', end: () => (innerWidth < 900 ? 'top 10%' : 'center 55%'), scrub: true, invalidateOnRefresh: true } });
-    shots.forEach((shot, index) => timeline.fromTo(shot, { x: () => offset(shot, 'x'), y: () => offset(shot, 'y'), rotation: tilt[index % tilt.length], scale: 0.66 }, { x: 0, y: 0, rotation: 0, scale: 1, duration: 1 }, (shots.length - 1 - index) * 0.08));
-  });
-}, { id: 'scene:studio' });
-</script>
-<script data-8b-part="scene:journal">
-queueMotion(() => {
-  gsap.matchMedia().add('(prefers-reduced-motion: no-preference)', () => {
-    const journal = document.getElementById('journal');
-    const shots = [...journal.querySelectorAll('.journal__shot')];
-    const stories = [...journal.querySelectorAll('.story')];
-    journal.classList.add('is-swap');
-    stories.forEach((story, index) => {
-      const timeline = gsap.timeline({ defaults: { ease: 'none' }, scrollTrigger: { id: `journal:${index}`, trigger: story, start: 'top 84%', end: 'top 50%', scrub: true } });
-      timeline.fromTo(story, { opacity: 0.25 }, { opacity: 1, duration: 0.8 }, 0);
-      if (index && shots[index]) timeline.fromTo(shots[index], { clipPath: 'circle(0% at 50% 50%)' }, { clipPath: 'circle(75% at 50% 50%)', ease: 'power1.inOut', duration: 1 }, 0);
-    });
-    return () => journal.classList.remove('is-swap');
-  });
-}, { id: 'scene:journal' });
 </script>
 <script data-8b-part="scene:contact">
 queueMotion(() => {
