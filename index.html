@@ -347,12 +347,12 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 #capabilities .service__text { display: flex; flex-direction: column; gap: 16px; }
 #capabilities .service__line { max-width: 30rem; color: var(--color-6); }
 #capabilities .service__tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 8px; color: var(--color-6); }
-#capabilities .service__media { overflow: hidden; border-radius: var(--radius-3); aspect-ratio: 16 / 10; }
-#capabilities .service__media img { width: 100%; height: 100%; object-fit: cover; }
+#capabilities .service__media { overflow: hidden; border-radius: var(--radius-3); aspect-ratio: 16 / 9; display: flex; align-items: center; justify-content: center; }
+#capabilities .service__media img { width: 100%; height: 100%; object-fit: contain; }
 #capabilities .service__shade { position: absolute; inset: 0; background: var(--color-1); opacity: 0; pointer-events: none; }
 @media (min-width: 900px) {
-  #capabilities .service { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(24px, 3vw, 48px); height: min(62svh, 560px); min-height: 400px; }
-  #capabilities .service__media { aspect-ratio: auto; height: 100%; }
+  #capabilities .service { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(24px, 3vw, 48px); height: auto; min-height: 400px; align-items: center; }
+  #capabilities .service__media { aspect-ratio: 16 / 9; height: auto; width: 100%; }
 }
 }
 </style>
@@ -689,7 +689,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
         <p class="m-text-5 service__line">Identify layout inconsistencies, responsive issues, and browser compatibility problems across Chrome, Firefox, Safari, and Edge on desktop and mobile viewports.</p>
         <ul class="service__tags"><li class="m-badge">Cross-browser</li><li class="m-badge">Responsive UI</li><li class="m-badge">Browser compatibility</li><li class="m-badge">Viewport checks</li></ul>
       </div>
-      <div class="service__media" data-8b-motion="iris"><img srcset="https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=310&amp;h=233&amp;q=80 310w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=300&amp;q=80 400w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=640&amp;h=480&amp;q=80 640w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=960&amp;h=720&amp;q=80 960w, https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80 1200w" sizes="(max-width: 767px) 82vw, 47vw" style="background:#f3f3f3" src="https://images.unsplash.com/photo-1617825295690-28ae56c56135?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8cGFja2FnaW5nJTIwZGVzaWduJTIwbW9ja3VwJTIwYm94ZXN8ZW58MXwwfHx8MTc5MTIwOTc1MHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=1200&amp;h=900&amp;q=80" width="1200" height="900" alt="UI and cross-device testing across smartphones and desktops" loading="lazy"></div>
+      <div class="service__media" data-8b-motion="iris"><img src="images/services/ui-cross-browser-testing.jpg" style="background:#efe5fd" width="1024" height="576" alt="UI and cross-browser testing across Chrome, Firefox, Safari, and Edge" loading="lazy"></div>
       <span class="service__shade" aria-hidden="true"></span>
     </li>
     <li class="service m-surface">
