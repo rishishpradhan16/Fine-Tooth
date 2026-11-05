@@ -202,7 +202,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 #navigation .nav__links { margin-inline: auto; padding: 0 8px; border-radius: var(--radius-2); background: var(--color-1); color: var(--color-2); }
 #navigation .nav__links ul { display: flex; }
 #navigation .nav__cta { box-shadow: var(--shadow-3); }
-#navigation .nav__links a { display: block; margin: 0 14px; padding-block: 14px; }
+#navigation .nav__links a { display: block; margin: 0 clamp(8px, 0.95vw, 14px); padding-block: 14px; white-space: nowrap; }
 #navigation .nav__links a::after { bottom: 10px; }
 #navigation .nav__menu { display: none; margin-left: auto; }
 #navigation .menu { position: fixed; inset: 0; z-index: 60; display: grid; grid-template-rows: auto 1fr auto; padding: 14px var(--space-1) 32px; background: var(--color-1); color: var(--color-2); overflow-y: auto; }
@@ -529,6 +529,702 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 }
 }
 </style>
+<style data-8b-part="conversion-features">
+/* 1. Free Bug Teardown Lead Magnet */
+#teardown {
+  position: relative;
+  padding: clamp(60px, 9vh, 120px) var(--space-1);
+  background: var(--color-1);
+  color: var(--color-2);
+  border-top: 1px solid color-mix(in srgb, var(--color-2) 12%, transparent);
+}
+#teardown .teardown__box {
+  max-width: 1160px;
+  margin-inline: auto;
+  padding: clamp(32px, 5vw, 64px);
+  border-radius: var(--radius-1);
+  background: radial-gradient(circle at 85% 15%, color-mix(in srgb, var(--color-3) 24%, transparent), transparent 50%), var(--color-7);
+  border: 1px solid color-mix(in srgb, var(--color-3) 40%, transparent);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.45);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 36px;
+}
+@media (min-width: 900px) {
+  #teardown .teardown__box {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+    align-items: center;
+    gap: 56px;
+  }
+}
+#teardown .teardown__lead {
+  color: var(--color-5);
+  margin-top: 14px;
+  line-height: 1.5;
+}
+#teardown .teardown__form {
+  display: grid;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.04);
+  padding: clamp(20px, 3vw, 32px);
+  border-radius: var(--radius-3);
+  border: 1px solid color-mix(in srgb, var(--color-2) 12%, transparent);
+}
+#teardown .teardown__input {
+  width: 100%;
+  padding: 13px 16px;
+  border-radius: var(--radius-3);
+  border: 1px solid color-mix(in srgb, var(--color-2) 20%, transparent);
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--color-2);
+  font-family: var(--font-2);
+  font-size: 15px;
+  box-sizing: border-box;
+}
+#teardown .teardown__input:focus {
+  outline: none;
+  border-color: var(--color-3);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-3) 30%, transparent);
+}
+#teardown .teardown__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  margin-top: 14px;
+  font-size: 13px;
+  color: #c4b5fd;
+}
+#teardown .teardown__status {
+  padding: 14px 18px;
+  border-radius: var(--radius-3);
+  background: color-mix(in srgb, var(--color-3) 25%, transparent);
+  border: 1px solid var(--color-3);
+  color: var(--color-2);
+  font-size: 14px;
+  line-height: 1.5;
+  display: none;
+}
+
+/* 2. Interactive Sample Bug Report */
+#sample-report {
+  position: relative;
+  padding: var(--space-2) var(--space-1);
+  background: var(--color-2);
+  color: var(--color-1);
+  border-top: 1px solid color-mix(in srgb, var(--color-1) 12%, transparent);
+}
+#sample-report .sample__head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px 40px;
+  margin-bottom: clamp(32px, 5vh, 48px);
+}
+#sample-report .sample__card {
+  max-width: 1140px;
+  margin-inline: auto;
+  border-radius: var(--radius-1);
+  background: #0f0e15;
+  color: #f1f0f7;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 25px 70px rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+#sample-report .sample__topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  padding: 18px 26px;
+  background: #171520;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+#sample-report .sample__badge-crit {
+  background: #dc2626;
+  color: #fff;
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+#sample-report .sample__badge-crit::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #fff;
+  animation: pulse-dot 1.4s infinite;
+}
+@keyframes pulse-dot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+#sample-report .sample__tabs {
+  display: flex;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  background: rgba(0,0,0,0.25);
+  overflow-x: auto;
+}
+#sample-report .sample__tab-btn {
+  padding: 15px 24px;
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  color: #9ca3af;
+  font-family: var(--font-2);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+#sample-report .sample__tab-btn.is-active {
+  color: #fff;
+  border-bottom-color: var(--color-3);
+  background: rgba(108, 60, 255, 0.15);
+}
+#sample-report .sample__tab-pane {
+  display: none;
+  padding: clamp(20px, 3.5vw, 36px);
+}
+#sample-report .sample__tab-pane.is-active {
+  display: block;
+}
+#sample-report .sample__step-list {
+  display: grid;
+  gap: 10px;
+  margin: 16px 0;
+  padding-left: 22px;
+  color: #d1d5db;
+}
+#sample-report .sample__code-block {
+  background: #06050a;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius-3);
+  padding: 20px;
+  font-family: monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #a5b4fc;
+  overflow-x: auto;
+}
+#sample-report .sample__download-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 26px;
+  background: #14121d;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+/* 3. In-House vs Freelancer vs Fine-Tooth Comparison Table */
+#comparison {
+  position: relative;
+  padding: var(--space-2) var(--space-1);
+  background: var(--color-2);
+  color: var(--color-1);
+  border-top: 1px solid color-mix(in srgb, var(--color-1) 12%, transparent);
+}
+.comparison-wrap {
+  margin-bottom: 0;
+}
+.comparison-table-card {
+  border-radius: var(--radius-1);
+  background: var(--color-4);
+  padding: clamp(20px, 2.5vw, 36px);
+  border: 1px solid color-mix(in srgb, var(--color-1) 8%, transparent);
+}
+.comparison-table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.comparison-table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+.comparison-table th, .comparison-table td {
+  padding: 16px 20px;
+  vertical-align: middle;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-1) 10%, transparent);
+  font-family: var(--font-2);
+  font-size: 14px;
+}
+.comparison-table th {
+  font-family: var(--font-1);
+  font-size: 16px;
+  font-weight: 700;
+  background: transparent;
+}
+.comparison-table th.col-highlight {
+  background: var(--color-1);
+  color: var(--color-2);
+  border-radius: var(--radius-3) var(--radius-3) 0 0;
+  border-top: 2px solid var(--color-3);
+  border-left: 2px solid var(--color-3);
+  border-right: 2px solid var(--color-3);
+  border-bottom: none;
+}
+.comparison-table td.col-highlight {
+  background: color-mix(in srgb, var(--color-3) 10%, transparent);
+  border-left: 2px solid var(--color-3);
+  border-right: 2px solid var(--color-3);
+  font-weight: 600;
+  color: var(--color-1);
+}
+.comparison-table tr:last-child td.col-highlight {
+  border-radius: 0 0 var(--radius-3) var(--radius-3);
+  border-bottom: 2px solid var(--color-3);
+}
+.check-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #16a34a;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  margin-right: 6px;
+}
+.cross-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #ef4444;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+/* 4. Direct Meeting Booking (Calendly / Cal.com) */
+.booking-card {
+  padding: clamp(24px, 3vw, 36px);
+  border-radius: var(--radius-1);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(8px);
+  display: grid;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+.booking-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(13, 12, 17, 0.88);
+  backdrop-filter: blur(12px);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.booking-modal.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+.booking-modal__content {
+  width: 100%;
+  max-width: 680px;
+  max-height: 90vh;
+  background: #14121d;
+  color: #fff;
+  border-radius: var(--radius-1);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.6);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.booking-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 28px;
+  background: #1b1828;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.booking-modal__body {
+  padding: 28px;
+  overflow-y: auto;
+  display: grid;
+  gap: 20px;
+}
+.time-slot-btn {
+  padding: 12px 16px;
+  border-radius: var(--radius-3);
+  background: #232034;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-family: var(--font-2);
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+.time-slot-btn:hover {
+  background: var(--color-3);
+  border-color: var(--color-3);
+}
+
+.nav__actions { display: flex; align-items: center; gap: 8px; }
+.nav__booking-btn { padding: 0 16px; min-height: 44px; font-size: 14px; }
+.hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 18px; }
+
+/* ========================================================
+   COMPREHENSIVE MOBILE RESPONSIVENESS SUITE (< 900px)
+   ======================================================== */
+@media (max-width: 899px) {
+  :root {
+    --space-1: clamp(14px, 4vw, 24px);
+    --space-2: clamp(52px, 8.5vh, 88px);
+  }
+
+  /* Fixed Navigation Bar */
+  #navigation {
+    padding: 10px var(--space-1);
+    justify-content: space-between;
+  }
+  #navigation .nav__brand {
+    font-size: 21px;
+    min-height: 40px;
+    padding: 7px 14px 0;
+  }
+  #navigation .nav__actions {
+    margin-left: auto;
+  }
+  #navigation .nav__actions .nav__booking-btn {
+    min-height: 40px !important;
+    padding: 0 12px !important;
+    font-size: 13px !important;
+  }
+  #navigation .nav__menu {
+    min-height: 40px !important;
+    padding: 0 14px !important;
+    font-size: 13px !important;
+    margin-left: 0 !important;
+  }
+
+  /* Mobile Fullscreen Drawer Menu */
+  #navigation .menu[hidden] {
+    display: none !important;
+  }
+  #navigation .menu {
+    padding: 16px var(--space-1) 28px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    overflow-y: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+  #navigation .menu__top {
+    margin-bottom: 12px;
+  }
+  #navigation .menu__list {
+    display: grid !important;
+    gap: 8px !important;
+    margin-block: auto !important;
+    padding-block: 10px !important;
+  }
+  #navigation .menu__list a {
+    font-size: clamp(24px, 6.8vw, 36px) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.04em !important;
+  }
+  #navigation .menu__foot {
+    font-size: 13px !important;
+    padding-top: 14px !important;
+  }
+
+  /* Hero Section: Fix Aperture Overlapping Buttons & Improve Layout */
+  #hero {
+    min-height: max(100svh, 600px);
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    padding-bottom: 28px !important;
+  }
+  #hero .hero__intro {
+    position: relative !important;
+    z-index: 10 !important;
+    padding-top: clamp(74px, 11svh, 100px) !important;
+  }
+  #hero .hero__title {
+    position: relative !important;
+    z-index: 10 !important;
+    font-size: min(22vw, 90px) !important;
+    padding-bottom: 0 !important;
+  }
+  #hero .hero__stage {
+    opacity: 0.22 !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+    left: auto !important;
+    right: 5% !important;
+    top: auto !important;
+    bottom: 10% !important;
+    width: min(58vw, 38svh) !important;
+    height: min(58vw, 38svh) !important;
+  }
+  .hero__actions {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 10px !important;
+    width: 100% !important;
+    max-width: 320px !important;
+  }
+  .hero__actions .m-btn,
+  .hero__actions .m-btn-2 {
+    width: 100% !important;
+    justify-content: center !important;
+    min-height: 48px !important;
+  }
+  .hero__actions .hero__link {
+    justify-content: center !important;
+    padding-block: 6px !important;
+  }
+    justify-content: center;
+    min-height: 48px;
+  }
+  #hero .hero__actions .hero__link {
+    justify-content: center;
+    padding-block: 6px;
+  }
+
+  /* Statement Section */
+  #statement .statement__body {
+    margin-top: clamp(32px, 6vh, 48px);
+    gap: 32px;
+  }
+
+  /* Free Bug Teardown Lead Magnet */
+  #teardown {
+    padding: var(--space-2) var(--space-1);
+  }
+  #teardown .teardown__box {
+    padding: 24px 18px;
+    border-radius: 20px;
+    gap: 24px;
+  }
+  #teardown .teardown__lead {
+    font-size: 15px;
+  }
+  #teardown .teardown__form {
+    padding: 20px 16px;
+    border-radius: 16px;
+  }
+  #teardown .teardown__input {
+    font-size: 16px; /* Prevents iOS auto-zoom on input focus */
+  }
+  #teardown .teardown__form .m-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Interactive Sample Bug Report */
+  #sample-report {
+    padding: var(--space-2) var(--space-1);
+  }
+  #sample-report .sample__head {
+    gap: 16px;
+  }
+  #sample-report .sample__head .m-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  #sample-report .sample__card {
+    border-radius: 18px;
+  }
+  #sample-report .sample__topbar {
+    padding: 14px 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  #sample-report .sample__tabs {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  #sample-report .sample__tabs::-webkit-scrollbar {
+    display: none;
+  }
+  #sample-report .sample__tab-btn {
+    padding: 12px 16px;
+    font-size: 13px;
+    flex-shrink: 0;
+  }
+  #sample-report .sample__tab-pane {
+    padding: 18px 16px;
+  }
+
+  /* Agency Comparison Section */
+  #comparison {
+    padding: var(--space-2) var(--space-1);
+  }
+  .comparison-mobile-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-3);
+    margin-bottom: 12px;
+  }
+  .comparison-table-card {
+    padding: 14px 10px;
+    border-radius: 18px;
+  }
+  .comparison-table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .comparison-table th, .comparison-table td {
+    padding: 12px 14px;
+    font-size: 13px;
+  }
+  /* Sticky 1st column on mobile so criteria is always visible while scrolling */
+  .comparison-table th:first-child,
+  .comparison-table td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 3;
+    background: var(--color-4);
+    box-shadow: 2px 0 10px rgba(0,0,0,0.06);
+  }
+  .comparison-table td:first-child {
+    background: var(--color-4);
+  }
+
+  /* Plans and Pricing Section */
+  #pricing {
+    padding: var(--space-2) var(--space-1);
+  }
+  #pricing .pricing__head {
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+  #pricing .pricing__toggle-group {
+    width: 100%;
+    display: flex;
+  }
+  #pricing .pricing__toggle-btn {
+    flex: 1;
+    text-align: center;
+    padding: 10px 8px;
+    font-size: 13px;
+  }
+  #pricing .plan-card {
+    padding: 24px 18px;
+    border-radius: 20px;
+  }
+  #pricing .plan-card .m-btn,
+  #pricing .plan-card .m-btn-2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Direct Meeting Booking Modal */
+  .booking-modal {
+    padding: 12px;
+  }
+  .booking-modal__content {
+    max-height: 92vh;
+    border-radius: 20px;
+  }
+  .booking-modal__header {
+    padding: 14px 18px;
+  }
+  .booking-modal__header h3 {
+    font-size: 18px;
+  }
+  .booking-modal__body {
+    padding: 16px 14px;
+    gap: 14px;
+    -webkit-overflow-scrolling: touch;
+  }
+  .booking-modal__body input,
+  .booking-modal__body .teardown__input {
+    font-size: 16px; /* Avoid iOS auto-zoom */
+  }
+  .time-slot-btn {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+  .booking-modal__body .m-btn {
+    width: 100%;
+    justify-content: center;
+    min-height: 48px;
+  }
+
+  /* Contact Section & Footer */
+  #contact {
+    padding: var(--space-2) var(--space-1);
+  }
+  #contact .contact__mail {
+    font-size: clamp(20px, 6vw, 36px);
+    word-break: break-all;
+  }
+  #contact .contact__form {
+    padding: 20px 16px;
+    border-radius: 20px;
+  }
+  #contact .contact__form .m-field {
+    font-size: 16px;
+  }
+  #contact .contact__actions .m-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  #footer .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 18px;
+  }
+  #footer .footer__news {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 900px) {
+  .comparison-mobile-hint {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  #footer .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  #footer .footer__field {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #footer .footer__field .m-icon {
+    width: 100%;
+    height: 44px;
+    border-radius: var(--radius-3);
+  }
+}
+</style>
 </head>
 <body class="m-text">
 <a class="skip" href="#main">Skip to content</a>
@@ -537,26 +1233,36 @@ textarea.m-field { min-height: 112px; resize: vertical; }
   <a class="nav__brand" href="#hero" aria-label="Fine Tooth, back to the top">Fine Tooth<span class="m-dot" aria-hidden="true"></span></a>
   <nav class="nav__links" aria-label="Main">
     <ul>
+      <li><a class="m-link-2" href="#teardown">Free Teardown</a></li>
       <li><a class="m-link-2" href="#work">Work</a></li>
+      <li><a class="m-link-2" href="#sample-report">Sample Report</a></li>
       <li><a class="m-link-2" href="#capabilities">Services</a></li>
       <li><a class="m-link-2" href="#method">Process</a></li>
       <li><a class="m-link-2" href="#team">Team</a></li>
+      <li><a class="m-link-2" href="#comparison">Comparison</a></li>
       <li><a class="m-link-2" href="#pricing">Pricing</a></li>
       <li><a class="m-link-2" href="#faq">FAQ</a></li>
     </ul>
   </nav>
   <a class="m-btn nav__cta" href="#contact"><span class="m-btn__label">Discuss Your Project</span></a>
+  <div class="nav__actions">
+    <button class="m-btn-2 nav__booking-btn js-open-booking" type="button"><span class="m-btn__label">Book Call</span></button>
+    <a class="m-btn nav__cta" href="#contact"><span class="m-btn__label">Discuss Project</span></a>
+  </div>
   <button class="m-btn-2 nav__menu" type="button" aria-expanded="false" aria-controls="menu"><span class="m-btn__label">Menu</span></button>
   <div class="menu" id="menu" role="dialog" aria-modal="true" aria-label="Menu" data-lenis-prevent hidden>
     <div class="menu__top"><button class="m-icon menu__close" type="button" aria-label="Close the menu"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg></button></div>
     <ul class="menu__list">
+      <li><a href="#teardown">Free Teardown<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#work">Work<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#sample-report">Sample Bug Report<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#capabilities">Services<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#method">Process<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#team">Team<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#comparison">Comparison<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#pricing">Pricing<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#faq">FAQ<span class="m-dot" aria-hidden="true"></span></a></li>
-      <li><a href="#contact">Contact<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#contact">Contact &amp; Book Call<span class="m-dot" aria-hidden="true"></span></a></li>
     </ul>
     <p class="m-text menu__foot">hello@finetooth.example · Software QA Agency</p>
   </div>
@@ -570,6 +1276,11 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     <p class="m-text-5 hero__lead">We help software teams and game studios uncover defects, validate critical user journeys, and build reliable automated tests so they can release with greater confidence.</p>
     <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 18px;">
       <a class="m-btn" href="#contact"><span class="m-btn__label">Discuss Your Project</span></a>
+    <p class="m-badge" style="margin-bottom: 12px; background: color-mix(in srgb, var(--color-3) 12%, transparent); border-color: var(--color-3); color: var(--color-3); font-weight: 700; letter-spacing: 0.04em;">INDEPENDENT QA &amp; TEST AUTOMATION</p>
+    <p class="m-text-5 hero__lead">We help software teams and game studios uncover defects, validate critical user journeys, and build reliable automated tests so they can release with confidence.</p>
+    <div class="hero__actions">
+      <a class="m-btn" href="#teardown"><span class="m-btn__label">Free Bug Teardown</span></a>
+      <button class="m-btn-2 js-open-booking" type="button"><span class="m-btn__label">Book 15-Min Intro</span></button>
       <a class="m-link hero__link" href="#work"><span class="m-link__label">Explore Our Work</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
     </div>
   </div>
@@ -583,15 +1294,62 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     <p class="m-text-5 statement__lead" data-8b-motion="ink">Shipping fast is easy. Knowing every critical checkout, API payload, game mechanic, and user journey holds under real-world conditions is where engineering counts. We partner with product teams and game studios to build reliable test suites, uncover regressions, and give engineering leaders greater confidence before every release.</p>
     <nav class="statement__index" aria-label="On this page">
       <ul>
+        <li><a class="m-link" href="#teardown"><span class="m-link__label">Free bug teardown</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#work"><span class="m-link__label">Selected work</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#sample-report"><span class="m-link__label">Sample bug report</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#capabilities"><span class="m-link__label">QA services</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#method"><span class="m-link__label">Our process</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#team"><span class="m-link__label">Meet our team</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#comparison"><span class="m-link__label">Agency comparison</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#pricing"><span class="m-link__label">Plans &amp; pricing</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#faq"><span class="m-link__label">Fair questions</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#contact"><span class="m-link__label">Discuss project</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
       </ul>
     </nav>
+  </div>
+</section>
+
+<!-- teardown: free lead magnet: 3-minute video teardown -->
+<section id="teardown" data-8b-section="teardown" aria-labelledby="teardown-title">
+  <div class="teardown__box">
+    <div class="teardown__info">
+      <span class="m-badge" style="background: rgba(108, 60, 255, 0.22); border-color: var(--color-3); color: #c4b5fd; font-weight: 700; margin-bottom: 12px; letter-spacing: 0.04em;">FREE LEAD AUDIT · NO SALES CALL REQUIRED</span>
+      <h2 class="m-text-3" id="teardown-title" style="font-size: clamp(38px, 5.5vw, 76px); line-height: 0.95; margin-bottom: 8px;">Free 3-minute bug teardown<span class="m-dot"></span></h2>
+      <p class="m-text-5 teardown__lead">Want to see what hidden UX bugs, Safari layout breaks, or critical checkout blockers are costing you customer conversions? Drop your website, SaaS staging, or app link below.</p>
+      <p class="m-text" style="color: var(--color-5); margin-top: 10px; line-height: 1.5;">A senior QA engineer tests your core journey on real physical devices and emails you a private 3-minute Loom video walking through 3 critical bugs within 24 hours.</p>
+      <div class="teardown__chips">
+        <span>⚡ 24-Hour Turnaround</span>
+        <span>•</span>
+        <span>🎥 Real Physical Devices</span>
+        <span>•</span>
+        <span>🔒 100% Confidential / Strict NDA</span>
+        <span>•</span>
+        <span>🚫 Zero Spam</span>
+      </div>
+    </div>
+    <form class="teardown__form" id="teardown-form" novalidate>
+      <div>
+        <label class="m-text-6" style="display: block; margin-bottom: 6px; color: #d1d5db;">Website or Web App URL *</label>
+        <input class="teardown__input" type="url" name="url" required placeholder="https://yourproduct.com" autocomplete="url">
+      </div>
+      <div>
+        <label class="m-text-6" style="display: block; margin-bottom: 6px; color: #d1d5db;">Your Work Email (where to send Loom video) *</label>
+        <input class="teardown__input" type="email" name="email" required placeholder="founder@company.com" autocomplete="email">
+      </div>
+      <div>
+        <label class="m-text-6" style="display: block; margin-bottom: 6px; color: #d1d5db;">What should we focus on?</label>
+        <select class="teardown__input" name="focus" style="appearance: auto; background-color: #171520;">
+          <option value="Mobile Safari & Responsive Layouts">Mobile Safari &amp; Responsive Layouts</option>
+          <option value="Signup & Onboarding Flow">Signup &amp; Onboarding Flow</option>
+          <option value="Checkout & Payment Processing">Checkout &amp; Payment Processing</option>
+          <option value="General Exploratory & Console Errors">General Exploratory &amp; Console Errors</option>
+        </select>
+      </div>
+      <button class="m-btn" type="submit" style="width: 100%; justify-content: center; min-height: 50px;">
+        <span class="m-btn__label">Send Me 3 Critical Bugs (Free)</span>
+      </button>
+      <div class="teardown__status" id="teardown-status" role="status" aria-live="polite"></div>
+    </form>
   </div>
 </section>
 
@@ -731,6 +1489,135 @@ textarea.m-field { min-height: 112px; resize: vertical; }
   </ol>
 </section>
 
+<!-- sample-report: interactive sample bug report demo -->
+<section id="sample-report" data-8b-section="sample-report" aria-labelledby="sample-report-title">
+  <div class="sample__head">
+    <div>
+      <span class="m-badge" style="background: color-mix(in srgb, var(--color-3) 14%, transparent); border-color: var(--color-3); color: var(--color-3); font-weight: 700; margin-bottom: 12px; letter-spacing: 0.04em;">DELIVERABLE TRANSPARENCY</span>
+      <h2 class="m-text-3" id="sample-report-title">How we report bugs<span class="m-dot"></span></h2>
+      <p class="m-text-5" style="max-width: 36rem; color: var(--color-6); margin-top: 10px;">Engineering teams love our defect reports because they are high-signal, zero-fluff, and 100% reproducible on the first attempt. Explore this real-world sample ticket:</p>
+    </div>
+    <div style="display: flex; gap: 12px; align-items: center;">
+      <a class="m-btn js-download-report" href="javascript:void(0)"><span class="m-btn__label">Download Sample PDF</span></a>
+    </div>
+  </div>
+
+  <div class="sample__card">
+    <div class="sample__topbar">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px;">
+        <span class="sample__badge-crit">CRITICAL P0</span>
+        <span style="font-family: monospace; font-size: 14px; color: #a5b4fc; font-weight: 700;">TICKET #FT-1048</span>
+        <span style="font-size: 13px; color: #9ca3af;">• Reported 2 hours ago • Verified on Real Device</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 8px;">
+        <span class="m-badge" style="background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.18); color: #fff; font-size: 11px;">iOS 17.4 · Mobile Safari</span>
+        <span class="m-badge" style="background: rgba(16, 185, 129, 0.15); border-color: #10b981; color: #34d399; font-size: 11px;">100% REPRODUCIBLE</span>
+      </div>
+    </div>
+
+    <!-- Interactive Navigation Tabs -->
+    <div class="sample__tabs" role="tablist">
+      <button class="sample__tab-btn is-active" data-tab="summary" role="tab" type="button">1. Defect Summary &amp; Steps</button>
+      <button class="sample__tab-btn" data-tab="logs" role="tab" type="button">2. Video &amp; Console Trace</button>
+      <button class="sample__tab-btn" data-tab="automation" role="tab" type="button">3. Playwright Automated Spec</button>
+    </div>
+
+    <!-- Tab 1: Summary -->
+    <div class="sample__tab-pane is-active" id="tab-summary" role="tabpanel">
+      <h3 style="font-family: var(--font-1); font-size: clamp(20px, 2.2vw, 28px); margin-bottom: 12px; color: #fff;">
+        Safari Mobile: Rapid promo code apply + Apple Pay trigger freezes checkout modal with unhandled promise rejection
+      </h3>
+      <p style="color: #9ca3af; font-size: 15px; line-height: 1.5; margin-bottom: 18px;">
+        <strong style="color: #f87171;">Business Impact:</strong> Prevents 100% of mobile Safari visitors from completing their transaction if they tap Apple Pay while a promo code is validating. Results in immediate revenue loss on mobile traffic.
+      </p>
+
+      <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: var(--radius-3); padding: 18px 22px; margin-bottom: 20px;">
+        <p style="font-weight: 700; color: #c4b5fd; margin-bottom: 8px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em;">Precise Steps to Reproduce:</p>
+        <ol class="sample__step-list">
+          <li>Open staging application on real iPhone 15 Pro running iOS 17.4 Safari.</li>
+          <li>Add any product ($49.00) to cart and tap <em>Proceed to Checkout</em>.</li>
+          <li>Enter valid promo code <code style="background:rgba(255,255,255,0.1); padding:2px 6px; border-radius:4px; color:#fff;">SPRING25</code> into the discount input.</li>
+          <li>Tap <strong>Apply</strong>, and immediately (within 150ms) tap the <strong>Apple Pay</strong> payment button before server response arrives.</li>
+        </ol>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px;">
+        <div style="background: rgba(34, 197, 94, 0.08); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: var(--radius-3); padding: 16px;">
+          <p style="font-weight: 700; color: #4ade80; margin-bottom: 6px; font-size: 13px;">✓ EXPECTED RESULT:</p>
+          <p style="font-size: 14px; color: #d1d5db; line-height: 1.45;">Button shows loading spinner, promo code resolves, total updates to $36.75, and native Apple Pay sheet launches with adjusted total.</p>
+        </div>
+        <div style="background: rgba(239, 68, 68, 0.08); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: var(--radius-3); padding: 16px;">
+          <p style="font-weight: 700; color: #f87171; margin-bottom: 6px; font-size: 13px;">✗ ACTUAL RESULT:</p>
+          <p style="font-size: 14px; color: #d1d5db; line-height: 1.45;">Modal UI freezes completely. Apple Pay sheet fails to launch. Button remains in disabled state, user cannot retry without hard page refresh.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 2: Logs & Video -->
+    <div class="sample__tab-pane" id="tab-logs" role="tabpanel">
+      <div style="display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px;">
+        <div style="background: rgba(0,0,0,0.4); border: 1px dashed rgba(255,255,255,0.2); border-radius: var(--radius-3); padding: 24px; text-align: center;">
+          <div style="width: 52px; height: 52px; border-radius: 50%; background: var(--color-3); display: inline-grid; place-items: center; margin-bottom: 12px;">
+            <svg style="width: 24px; height: 24px; fill: #fff;" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <p style="font-weight: 700; color: #fff; margin-bottom: 4px;">42-Second Loom Video Screen Recording Attached</p>
+          <p style="font-size: 13px; color: #9ca3af; max-width: 420px; margin-inline: auto;">Every Fine Tooth bug ticket includes high-definition video evidence capturing touch gestures, network throttle state, and exact visual glitches.</p>
+        </div>
+
+        <div>
+          <p style="font-size: 13px; font-weight: 700; color: #c4b5fd; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.04em;">Browser Console &amp; Network Trace:</p>
+          <pre class="sample__code-block"><code>[Error] Uncaught (in promise) TypeError: Cannot read properties of undefined (reading 'calculateDiscount')
+    at CheckoutSession.applyCoupon (checkout-v2.bundle.js:142:38)
+    at HTMLButtonElement.dispatch (vendor.js:8912:21)
+[Network] POST https://api.finetooth-demo.app/v1/cart/apply-promo
+    Status: 422 Unprocessable Entity
+    Payload: {"coupon": "SPRING25", "sessionState": "TRANSACTION_IN_FLIGHT"}
+    Duration: 340ms</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tab 3: Automation Spec -->
+    <div class="sample__tab-pane" id="tab-automation" role="tabpanel">
+      <p style="color: #9ca3af; font-size: 14px; margin-bottom: 14px;">
+        We don't just file tickets — when you select our Automation plan, we write regression checks in Playwright or Cypress so this bug never regresses in future PRs:
+      </p>
+      <pre class="sample__code-block"><code>// tests/e2e/checkout-race-condition.spec.ts
+import { test, expect } from '@playwright/test';
+
+test.describe('Checkout State Integrity', () => {
+  test('rapid promo apply + payment initiation handles race conditions cleanly', async ({ page }) => {
+    await page.goto('/checkout');
+    await page.getByTestId('promo-input').fill('SPRING25');
+
+    // Trigger near-simultaneous user clicks on mobile viewport
+    await Promise.all([
+      page.getByRole('button', { name: /Apply/i }).click(),
+      page.getByTestId('apple-pay-button').click()
+    ]);
+
+    // Verify error state does NOT freeze modal
+    const errorBanner = page.locator('.payment-crash-modal');
+    await expect(errorBanner).not.toBeVisible();
+
+    // Verify order total settles accurately
+    await expect(page.getByTestId('order-total')).toHaveText('$36.75');
+  });
+});</code></pre>
+    </div>
+
+    <div class="sample__download-bar">
+      <div style="font-size: 13px; color: #9ca3af;">
+        <span>Format: Compatible with Jira, GitHub Issues, Linear, ClickUp, or Slack.</span>
+      </div>
+      <a class="m-link js-download-report" href="javascript:void(0)" style="font-size: 14px; color: #c4b5fd;">
+        <span class="m-link__label">Download Sample Report (.PDF)</span>
+        <svg class="m-link__arrow" viewBox="0 0 16 16"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
 <!-- method: process: four steps beside a ring the scroll draws round (QA Process loop) (animation: scene:method) -->
 <section id="method" data-8b-section="method" aria-labelledby="method-title">
   <div class="method__head">
@@ -789,6 +1676,74 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     <p class="m-text-6 team__highlight-badge">Collective Experience</p>
     <p class="m-text-4 team__highlight-title">4.5 years of collective QA experience</p>
     <p class="m-text-5 team__highlight-text">Hands-on testing across manual functional checks, UI/cross-browser compatibility, API verification, mobile flows, game mechanics, and test automation with Selenium, Playwright, and Cypress.</p>
+  </div>
+</section>
+
+<!-- comparison: In-House vs Freelancers vs Fine-Tooth -->
+<section id="comparison" data-8b-section="comparison" aria-labelledby="comparison-title">
+  <div class="comparison-wrap">
+    <div style="margin-bottom: 24px;">
+      <span class="m-badge" style="background: color-mix(in srgb, var(--color-3) 14%, transparent); border-color: var(--color-3); color: var(--color-3); font-weight: 700; margin-bottom: 12px; letter-spacing: 0.04em;">THE VALUE ADVANTAGE</span>
+      <h2 class="m-text-3" id="comparison-title" style="font-size: clamp(34px, 4.8vw, 68px); line-height: 0.96; margin-bottom: 10px;">Why teams choose Fine Tooth<span class="m-dot"></span></h2>
+      <p class="m-text-5" style="color: var(--color-6); max-width: 38rem;">A fraction of the cost of an in-house hire, with none of the unreliability, ghosting, or constant micromanagement of gig freelancers.</p>
+    </div>
+
+    <div class="comparison-mobile-hint">
+      <span class="m-dot" aria-hidden="true"></span> Swipe table left &amp; right to compare with Fine Tooth →
+    </div>
+
+    <div class="comparison-table-card">
+      <div class="comparison-table-scroll">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th style="width: 25%;">Criteria</th>
+              <th style="width: 25%;">In-House QA Engineer</th>
+              <th style="width: 25%;">Cheap Freelancer (Upwork/Fiverr)</th>
+              <th class="col-highlight" style="width: 25%;">Fine Tooth Agency</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Monthly Cost</strong></td>
+              <td>$7,500 – $10,000 / month<br><span style="font-size:12px; color:var(--color-6);">($90k–$120k/yr + benefits &amp; payroll tax)</span></td>
+              <td>$20 – $40 / hour<br><span style="font-size:12px; color:var(--color-6);">(Unpredictable scope &amp; billable disputes)</span></td>
+              <td class="col-highlight"><strong>$149 trial / $299–$699/mo</strong><br><span style="font-size:12px; color:var(--color-3);">Flat, predictable subscription</span></td>
+            </tr>
+            <tr>
+              <td><strong>Onboarding Speed</strong></td>
+              <td>4 to 8 weeks hiring &amp; interviewing</td>
+              <td>1 to 3 days (trial and error)</td>
+              <td class="col-highlight"><span class="check-icon">✓</span> <strong>Starts in 24 to 48 Hours</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Testing Rigor &amp; Hardware</strong></td>
+              <td>Limited to 1 person's hardware &amp; devices</td>
+              <td>Basic manual clicks on personal laptop</td>
+              <td class="col-highlight"><span class="check-icon">✓</span> <strong>Real Physical Device Matrix (iOS/Android/Desktop)</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Automation Engineering</strong></td>
+              <td>SDETs demand $120k+ salaries</td>
+              <td><span class="cross-icon">✗</span> Rarely proficient in Playwright/Cypress</td>
+              <td class="col-highlight"><span class="check-icon">✓</span> <strong>Production Playwright / Cypress in your repo</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Management &amp; Overhead</strong></td>
+              <td>1-on-1s, standups, HR, performance reviews</td>
+              <td>Constant micromanagement &amp; tracker audits</td>
+              <td class="col-highlight"><span class="check-icon">✓</span> <strong>Zero overhead; async Jira &amp; Slack tickets</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Commitment &amp; Risk</strong></td>
+              <td>Long-term legal contracts &amp; severance</td>
+              <td>High ghosting risk mid-sprint</td>
+              <td class="col-highlight"><span class="check-icon">✓</span> <strong>Month-to-month, pause or cancel anytime</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -971,6 +1926,20 @@ textarea.m-field { min-height: 112px; resize: vertical; }
   <div class="contact__grid">
     <div class="contact__info">
       <p class="m-text-5 contact__lead">Tell us about your application, testing priorities, or release timeline. We review every inquiry and reply within two business days.</p>
+      <!-- Direct Meeting Booking Card -->
+      <div class="booking-card">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+          <span class="m-badge" style="background: var(--color-2); color: var(--color-1); font-weight: 700; font-size: 11px;">FASTEST RESPONSE</span>
+          <span style="font-size: 12px; color: rgba(255,255,255,0.85); font-weight: 600;">15-Min Discovery</span>
+        </div>
+        <h3 class="m-text-7" style="color: var(--color-2); margin: 0;">Schedule a 15-Min Intro Call</h3>
+        <p class="m-text-6" style="color: rgba(255,255,255,0.85); line-height: 1.5; margin: 0;">Prefer speaking face-to-face? Pick a convenient slot on our live calendar to discuss your architecture, test scope, and start dates directly on Google Meet.</p>
+        <button type="button" class="m-btn-2 js-open-booking" style="width: 100%; justify-content: center; min-height: 48px;">
+          <span class="m-btn__label">Book 15-Min on Cal.com / Calendly</span>
+        </button>
+      </div>
+
+      <p class="m-text-5 contact__lead">Or tell us about your application, testing stack, or release timelines below. A senior QA engineer reviews every inquiry and replies within two business days.</p>
       <a class="contact__mail" href="mailto:hello@finetooth.example"><span>hello@finetooth.example</span></a>
       <div class="contact__places" style="margin-top: 20px;">
         <div>
@@ -989,6 +1958,9 @@ textarea.m-field { min-height: 112px; resize: vertical; }
         <label class="m-text-6">What can we help with?<select class="m-field" name="topic" id="contact-topic">
           <option value="Discuss Project">Discuss Your Project</option>
           <option value="Trial QA Plan ($149)">Trial QA Plan ($149)</option>
+          <option value="Schedule 15-Min Discovery Call">Schedule 15-Min Discovery Call</option>
+          <option value="Trial QA Plan ($149)">Request a QA Trial ($149)</option>
+          <option value="Game Testing & Mechanics">Game Testing &amp; Mechanics Validation</option>
           <option value="Monthly Basic Plan">Monthly Basic Plan ($299 / $449)</option>
           <option value="Monthly Pro Plan">Monthly Pro Plan ($699 / $899)</option>
           <option value="Monthly Growth Plan">Monthly Growth Plan ($1,299 / $1,699)</option>
@@ -1027,6 +1999,65 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     </form>
   </div>
 </section>
+
+<!-- booking-modal: interactive calendar and scheduler modal -->
+<div class="booking-modal" id="booking-modal" role="dialog" aria-modal="true" aria-label="Book 15-Minute QA Strategy Call">
+  <div class="booking-modal__content">
+    <div class="booking-modal__header">
+      <div>
+        <h3 class="m-text-7" style="margin: 0; color: #fff;">Book 15-Min QA Strategy Call</h3>
+        <p class="m-text-6" style="color: var(--color-5); margin-top: 4px;">Direct call with a Senior QA Lead · Google Meet or Zoom</p>
+      </div>
+      <button class="m-icon js-close-booking" type="button" aria-label="Close booking modal">
+        <svg viewBox="0 0 16 16"><path d="M3 3l10 10M13 3 3 13"/></svg>
+      </button>
+    </div>
+    <div class="booking-modal__body">
+      <div style="display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px; color: #c4b5fd;">
+        <span>✓ 15 Minutes</span>
+        <span>•</span>
+        <span>✓ No Pushy Sales Reps</span>
+        <span>•</span>
+        <span>✓ Instant Calendar Invite</span>
+        <span>•</span>
+        <span>✓ NDAs Supported</span>
+      </div>
+
+      <div>
+        <label class="m-text-6" style="display: block; margin-bottom: 8px; color: #d1d5db;">Select an upcoming time slot (US/Global Friendly):</label>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;" id="booking-slots">
+          <button class="time-slot-btn" type="button" data-time="Tomorrow · 10:00 AM EST" style="background:var(--color-3); border-color:var(--color-3);">Tomorrow<br><strong>10:00 AM EST</strong></button>
+          <button class="time-slot-btn" type="button" data-time="Tomorrow · 02:30 PM EST">Tomorrow<br><strong>02:30 PM EST</strong></button>
+          <button class="time-slot-btn" type="button" data-time="Day After · 11:00 AM EST">Day After<br><strong>11:00 AM EST</strong></button>
+          <button class="time-slot-btn" type="button" data-time="Day After · 04:00 PM EST">Day After<br><strong>04:00 PM EST</strong></button>
+        </div>
+      </div>
+
+      <form id="quick-booking-form" style="display: grid; gap: 12px; margin-top: 6px;">
+        <input type="hidden" name="selected_time" id="booking-selected-time" value="Tomorrow · 10:00 AM EST">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
+          <div>
+            <label class="m-text-6" style="display:block; margin-bottom:4px; color:#9ca3af;">Your Name *</label>
+            <input class="teardown__input" type="text" name="name" required placeholder="Alex Smith" style="background:#201d2e;">
+          </div>
+          <div>
+            <label class="m-text-6" style="display:block; margin-bottom:4px; color:#9ca3af;">Work Email *</label>
+            <input class="teardown__input" type="email" name="email" required placeholder="alex@startup.io" style="background:#201d2e;">
+          </div>
+        </div>
+        <div>
+          <label class="m-text-6" style="display:block; margin-bottom:4px; color:#9ca3af;">Product URL or Staging link</label>
+          <input class="teardown__input" type="text" name="url" placeholder="https://yourproduct.com" style="background:#201d2e;">
+        </div>
+        <button class="m-btn" type="submit" style="width: 100%; justify-content: center; min-height: 48px; margin-top: 4px;">
+          <span class="m-btn__label">Confirm Calendar Invite</span>
+        </button>
+        <p class="m-text-6" style="color: #9ca3af; text-align: center; margin-top: 4px;">Or open directly: <a href="https://cal.com" target="_blank" rel="noopener" style="color: #c4b5fd; text-decoration: underline;">Open in Cal.com / Calendly</a></p>
+        <div id="booking-status" style="display:none; padding:12px 16px; border-radius:var(--radius-3); background:rgba(34,197,94,0.15); border:1px solid #22c55e; color:#fff; font-size:14px; text-align:center;"></div>
+      </form>
+    </div>
+  </div>
+</div>
 </main>
 
 <!-- footer: closing greeting "Bye" with the round photo full stop, link columns, newsletter, copyright and the Design: 8B credit (animation: scene:footer) -->
@@ -1039,6 +2070,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
       <a class="m-link-2" href="#again">Applications</a>
       <a class="m-link-2" href="#capabilities">Services</a>
       <a class="m-link-2" href="#method">Approach</a>
+      <a class="m-link-2" href="#comparison">Comparison</a>
       <a class="m-link-2" href="#pricing">Pricing</a>
       <a class="m-link-2" href="#team">Team</a>
       <a class="m-link-2" href="#faq">FAQ</a>
@@ -1574,6 +2606,143 @@ queueMotion(() => {
       .fromTo(footer.querySelector('.footer__word'), { yPercent: 30 }, { yPercent: 0, ease: 'power2.out', duration: 0.8 }, 0);
   });
 }, { id: 'scene:footer' });
+</script>
+<script data-8b-part="conversion-features-script">
+(() => {
+  function escapeHTML(str) {
+    return String(str).replace(/[&<>'"]/g, tag => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      "'": '&#39;',
+      '"': '&quot;'
+    }[tag] || tag));
+  }
+
+  // 1. Teardown Lead Magnet Form Handling
+  const teardownForm = document.getElementById('teardown-form');
+  const teardownStatus = document.getElementById('teardown-status');
+  if (teardownForm) {
+    teardownForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const urlInput = teardownForm.querySelector('input[name="url"]');
+      const emailInput = teardownForm.querySelector('input[name="email"]');
+      const focusSelect = teardownForm.querySelector('select[name="focus"]');
+
+      if (!urlInput.value || !emailInput.value || !emailInput.checkValidity()) {
+        teardownStatus.style.display = 'block';
+        teardownStatus.style.background = 'rgba(239, 68, 68, 0.2)';
+        teardownStatus.style.borderColor = '#ef4444';
+        teardownStatus.textContent = 'Please enter a valid website URL and work email address.';
+        return;
+      }
+
+      teardownStatus.style.display = 'block';
+      teardownStatus.style.background = 'rgba(34, 197, 94, 0.15)';
+      teardownStatus.style.borderColor = '#22c55e';
+      teardownStatus.innerHTML = `<strong>Audit Queued!</strong> A senior QA engineer will inspect <code>${escapeHTML(urlInput.value)}</code> focusing on <em>${escapeHTML(focusSelect.value)}</em> and email your private 3-minute Loom video to <code>${escapeHTML(emailInput.value)}</code> within 24 hours.`;
+      teardownForm.reset();
+    });
+  }
+
+  // 2. Interactive Sample Bug Report Tabs
+  const sampleCard = document.querySelector('.sample__card');
+  if (sampleCard) {
+    const tabBtns = sampleCard.querySelectorAll('.sample__tab-btn');
+    const tabPanes = sampleCard.querySelectorAll('.sample__tab-pane');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabId = btn.getAttribute('data-tab');
+        tabBtns.forEach(b => b.classList.remove('is-active'));
+        tabPanes.forEach(p => p.classList.remove('is-active'));
+
+        btn.classList.add('is-active');
+        const activePane = document.getElementById(`tab-${tabId}`);
+        if (activePane) activePane.classList.add('is-active');
+      });
+    });
+
+    // Sample Download action
+    document.querySelectorAll('.js-download-report').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        alert('Sample Bug Report (PDF Summary):\n\n• Ticket: #FT-1048 (Critical P0)\n• Issue: Safari Mobile rapid promo apply checkout freeze\n• Platform: iPhone 15 Pro (iOS 17.4 Safari)\n• Status: 100% Reproducible on real hardware\n• Assets: Steps, video trace, and Playwright spec included.\n\nTo request this level of defect reporting for your releases, start with our $149 Trial or Free Teardown!');
+      });
+    });
+  }
+
+  // 3. Direct Meeting Booking Modal (Calendly / Cal.com)
+  const bookingModal = document.getElementById('booking-modal');
+  const openBookingBtns = document.querySelectorAll('.js-open-booking');
+  const closeBookingBtn = document.querySelector('.js-close-booking');
+  const bookingForm = document.getElementById('quick-booking-form');
+  const bookingStatus = document.getElementById('booking-status');
+  const selectedTimeInput = document.getElementById('booking-selected-time');
+  const timeSlotBtns = document.querySelectorAll('.time-slot-btn');
+
+  const openModal = () => {
+    if (bookingModal) {
+      bookingModal.classList.add('is-active');
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const closeModal = () => {
+    if (bookingModal) {
+      bookingModal.classList.remove('is-active');
+      document.body.style.overflow = '';
+    }
+  };
+
+  openBookingBtns.forEach(btn => btn.addEventListener('click', openModal));
+  if (closeBookingBtn) closeBookingBtn.addEventListener('click', closeModal);
+
+  if (bookingModal) {
+    bookingModal.addEventListener('click', (e) => {
+      if (e.target === bookingModal) closeModal();
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && bookingModal && bookingModal.classList.contains('is-active')) {
+      closeModal();
+    }
+  });
+
+  // Time Slot Selection
+  timeSlotBtns.forEach(slot => {
+    slot.addEventListener('click', () => {
+      timeSlotBtns.forEach(s => {
+        s.style.background = '#232034';
+        s.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+      });
+      slot.style.background = 'var(--color-3)';
+      slot.style.borderColor = 'var(--color-3)';
+      if (selectedTimeInput) selectedTimeInput.value = slot.getAttribute('data-time');
+    });
+  });
+
+  // Booking Form Submission
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const name = bookingForm.querySelector('input[name="name"]').value;
+      const email = bookingForm.querySelector('input[name="email"]').value;
+      const time = selectedTimeInput ? selectedTimeInput.value : 'Upcoming slot';
+
+      if (bookingStatus) {
+        bookingStatus.style.display = 'block';
+        bookingStatus.innerHTML = `🎉 <strong>Call Confirmed!</strong> A calendar invite for <em>${escapeHTML(time)}</em> has been scheduled for <code>${escapeHTML(email)}</code>. See you soon!`;
+        bookingForm.reset();
+        setTimeout(() => {
+          closeModal();
+          bookingStatus.style.display = 'none';
+        }, 4000);
+      }
+    });
+  }
+})();
 </script>
 
 </body>
