@@ -7,12 +7,12 @@
 
 const QA_DATA = {
   agency: {
-    name: "Fine Tooth",
-    tagline: "Software Quality Assurance & Test Automation Agency",
-    eyebrow: "INDEPENDENT QA & TEST AUTOMATION",
-    headline: "Find the bugs before your users do.",
-    supportingCopy: "We help software teams and game studios uncover defects, validate critical user journeys, and build reliable automated tests so they can release with greater confidence.",
-    email: "hello@finetooth.example", // Placeholder — replace with verified agency email
+    name: "ZeroBugStudio",
+    tagline: "Website Development, Software QA & Test Automation Agency",
+    eyebrow: "WEBSITE DEVELOPMENT & QA AUTOMATION",
+    headline: "Build fast websites. Catch bugs before your users do.",
+    supportingCopy: "We design and develop modern responsive websites and help software teams uncover defects, validate critical user journeys, and build reliable automated test suites.",
+    email: "hello@zerobugstudio.com", // Official agency email
     offices: [
       {
         city: "Remote",
@@ -127,7 +127,7 @@ const QA_DATA = {
     conditions: [
       "Displayed prices are starting prices in USD.",
       "Each plan covers only the stated number of projects.",
-      "The customer and Fine-Tooth agree on scope, access, priorities, and deliverables before testing begins.",
+      "The customer and ZeroBugStudio agree on scope, access, priorities, and deliverables before testing begins.",
       "Monthly plans include weekly progress reports and retesting of reported defects after fixes, subject to the plan's remaining hours.",
       "Unused hours do not roll over.",
       "Automation work is limited by the purchased hours and agreed scope.",
@@ -138,6 +138,28 @@ const QA_DATA = {
 
   portfolio: {
     websites: [
+      {
+        id: "satguruvisioncare",
+        name: "Satguru Vision Care",
+        category: "Web Development",
+        tag: "Healthcare & Clinic · Web Development",
+        image: "images/work/satguru-vision-care.png",
+        shortDescription: "Modern eye care and optical clinic website engineered with responsive doctor profiles, consultation booking, and mobile performance.",
+        url: "https://satguruvisioncare.com/",
+        isVerifiedUrl: true,
+        technologies: ["Custom Web Development", "Responsive Layouts", "Booking Workflow", "SEO & Speed"]
+      },
+      {
+        id: "careerdiary",
+        name: "Career Diary",
+        category: "Web Engineering",
+        tag: "Education & Career Portal · Web Engineering",
+        image: "images/work/career-diary.png",
+        shortDescription: "Comprehensive career guidance and educational resource platform developed with clean content hierarchies, dynamic reading grids, and SEO optimization.",
+        url: "https://careerdiary.in/",
+        isVerifiedUrl: true,
+        technologies: ["Content Platform", "Search Navigation", "Dynamic Grids", "Cross-Browser Responsive"]
+      },
       {
         id: "sarkarijobsuchna",
         name: "Sarkari Job Suchna",

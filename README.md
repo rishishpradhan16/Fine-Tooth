@@ -1,10 +1,12 @@
-Fine-Tooth — Software QA & Testing
+ZeroBugStudio — Website Development, Software QA & Testing
 
-Find the bugs before your users do.
+Build fast websites. Catch bugs before your users do.
 
-Fine-Tooth is a software quality assurance and testing agency focused on helping teams deliver reliable, user-friendly digital products. From websites and mobile applications to APIs and browser automation, we help identify issues before they reach your customers.
+ZeroBugStudio is a web development and software quality assurance agency focused on designing modern, responsive websites and helping teams deliver reliable, user-friendly digital products. From custom web engineering and mobile applications to APIs and browser automation, we help launch and maintain high-quality software.
 
 Services
+
+Website Development & Web Apps — Custom, responsive, and SEO-optimized business websites, SaaS portals, and landing pages.
 
 Manual & Functional Testing — Validate features, workflows, business logic, and edge cases.
 
@@ -48,7 +50,7 @@ Tools are selected according to each project's needs.
 
 Website
 
-This repository contains the Fine-Tooth agency website, built with HTML, CSS, and JavaScript.
+This repository contains the ZeroBugStudio agency website, built with HTML, CSS, and JavaScript.
 
 Run Locally
 
