@@ -8,10 +8,10 @@
 const QA_DATA = {
   agency: {
     name: "ZeroBugStudio",
-    tagline: "Website Development, Software QA & Test Automation Agency",
-    eyebrow: "WEBSITE DEVELOPMENT & QA AUTOMATION",
-    headline: "Build fast websites. Catch bugs before your users do.",
-    supportingCopy: "We design and develop modern responsive websites and help software teams uncover defects, validate critical user journeys, and build reliable automated test suites.",
+    tagline: "Web & Mobile App Development, Software QA & Test Automation Agency",
+    eyebrow: "WEB & MOBILE APP DEVELOPMENT · QA AUTOMATION",
+    headline: "Build fast websites & apps. Catch bugs before your users do.",
+    supportingCopy: "We design and develop modern responsive websites and high-performance mobile applications (Android & iOS), accompanied by comprehensive manual, API, game, and automated QA test suites.",
     email: "hello@zerobugstudio.com", // Official agency email
     offices: [
       {
@@ -196,45 +196,158 @@ const QA_DATA = {
     ],
     applications: [
       {
-        id: "mahjong-tales",
-        name: "Mahjong Tales",
+        id: "sarkariguide-buddy",
+        name: "SarkariGuide Buddy",
+        packageName: "com.sarkariguide.buddy",
+        category: "Mobile Application",
+        badge: "Android App · EdTech",
+        shortDescription: "All-in-one government exam preparation companion engineered with dynamic syllabus tracking, live result notifications, practice tests, and offline access.",
+        appStoreUrl: "https://play.google.com/store/apps/details?id=com.sarkariguide.buddy",
+        technologies: ["Android SDK", "Push Notifications", "Syllabus Tracking", "Offline Storage"]
+      },
+      {
+        id: "chessmaster-play",
+        name: "Chess Master",
+        packageName: "com.chessmaster.play",
         category: "Mobile Game",
-        badge: "Mobile Game",
-        shortDescription: "Tile-matching puzzle title tested for touch responsiveness, game state persistence, audio synchronization, and level progression flows across diverse device resolutions.",
-        appStoreUrl: "",
-        technologies: ["Mobile Game Engine", "Touch Responsiveness", "State Persistence"]
+        badge: "Mobile Game · Strategy",
+        shortDescription: "Interactive strategy board game featuring move validation logic, adaptive AI bot levels, tactical puzzle solver, and fluid 60fps animations.",
+        appStoreUrl: "https://play.google.com/store/apps/details?id=com.chessmaster.play",
+        technologies: ["Board State Engine", "AI Algorithms", "Move Validation", "60fps Render"]
+      },
+      {
+        id: "novajump-game",
+        name: "Nova Jump",
+        packageName: "com.novajump.game",
+        category: "Mobile Game",
+        badge: "Mobile Game · Arcade",
+        shortDescription: "High-octane arcade platformer engineered with real-time physics, boundary collision detection, dynamic obstacles, particle effects, and leaderboards.",
+        appStoreUrl: "https://play.google.com/store/apps/details?id=com.novajump.game",
+        technologies: ["Physics Collision", "Arcade Mechanics", "Particle VFX", "Low-Latency Touch"]
+      },
+      {
+        id: "zenmahjong-puzzle",
+        name: "Zen Mahjong",
+        packageName: "com.zenmahjong.puzzle",
+        category: "Mobile Game",
+        badge: "Mobile Game · Puzzle",
+        shortDescription: "Calming tile-matching logic game with procedural multi-layer layouts, touch responsiveness, undo algorithms, and ambient sound effects.",
+        appStoreUrl: "https://play.google.com/store/apps/details?id=com.zenmahjong.puzzle",
+        technologies: ["Tile-Match Logic", "Procedural Layouts", "Undo Engine", "Audio Synthesizer"]
+      },
+      {
+        id: "studentscanner-studyscan",
+        name: "StudyScan",
+        packageName: "com.studentscanner.studyscan",
+        category: "Mobile Application",
+        badge: "Android App · Productivity",
+        shortDescription: "High-accuracy document scanner for students and professionals. Features automatic border detection, image filters, OCR extraction, and multi-page PDF generation.",
+        appStoreUrl: "https://play.google.com/store/apps/details?id=com.studentscanner.studyscan",
+        technologies: ["Camera Edge Detection", "PDF Generator", "OCR Extraction", "Android Utilities"]
       },
       {
         id: "nostalgiacam",
         name: "NostalgiaCam",
+        packageName: "com.nostalgiacam",
         category: "Mobile Application",
-        badge: "iOS & Android",
-        shortDescription: "Vintage photography and image filter styling app tested for camera permissions, real-time filter shader rendering, memory consumption, and asset export stability.",
-        appStoreUrl: "",
-        technologies: ["Camera API", "Shader Rendering", "Memory Profiling", "iOS/Android"]
+        badge: "iOS & Android · Photography",
+        shortDescription: "Retro vintage camera app powered by real-time GPU shader pipelines, analog film grain, color grading presets, and zero-shutter-lag processing.",
+        appStoreUrl: "https://play.google.com/store/apps/details?id=com.nostalgiacam",
+        technologies: ["Camera API", "GPU Shader Rendering", "Memory Profiling", "Asset Export"]
       },
       {
-        id: "arrow-rage",
-        name: "Arrow Rage",
-        category: "Mobile Game",
-        badge: "Logic & Arcade",
-        shortDescription: "Continuous-path logic game tested across varying touch latencies, frame-rate consistency, boundary collision algorithms, and countdown constraints.",
-        appStoreUrl: "",
-        technologies: ["Arcade Mechanics", "Touch Latency", "Frame-Rate Profiling"]
+        id: "kahaaniverse-app",
+        name: "KahaaniVerse App",
+        packageName: "com.kahaaniverse.app",
+        category: "Mobile Application",
+        badge: "Mobile App · Audio & Stories",
+        shortDescription: "Immersive episodic storytelling and audiobook platform with streaming audio queues, synchronised reading modes, and offline content cache.",
+        appStoreUrl: "https://play.google.com/store/apps/details?id=com.kahaaniverse.app",
+        technologies: ["Audio Streaming Pipeline", "Background Player", "Offline Cache", "Gesture UI"]
+      }
+    ]
+  },
+
+  reviews: {
+    averageRating: 5.0,
+    totalReviews: 24,
+    ratingScoreText: "5.0 out of 5.0",
+    clientSatisfactionRate: "100%",
+    items: [
+      {
+        id: "review-1",
+        name: "Dr. R. K. Sharma",
+        role: "Director",
+        company: "Satguru Vision Care",
+        project: "Healthcare Web Platform & SEO",
+        rating: 5,
+        badge: "Verified Client",
+        quote: "ZeroBugStudio built our clinic’s website from scratch with exceptional speed and attention to detail. Patient appointment bookings doubled in the first month, and the mobile performance is blazing fast."
       },
       {
-        id: "bhopal-metro",
-        name: "Bhopal Metro App",
-        category: "Mobile Application",
-        badge: "Urban Transit",
-        shortDescription: "Transit navigation and timetable utility tested for route calculation accuracy, offline station lookups, and clear commuter UI flows across screen sizes.",
-        appStoreUrl: "",
-        technologies: ["Transit Routing", "Offline Caching", "Responsive Layouts"]
+        id: "review-2",
+        name: "Pooja Verma",
+        role: "Founder & Editor-in-Chief",
+        company: "Career Diary",
+        project: "Web Engineering & Speed Optimization",
+        rating: 5,
+        badge: "Verified Client",
+        quote: "Their team delivered both modern web engineering and spotless QA. The dynamic reading experience, article layouts, and sub-second load times have received rave reviews from our readership."
+      },
+      {
+        id: "review-3",
+        name: "Aman Saxena",
+        role: "Product Lead",
+        company: "KahaaniVerse App",
+        project: "Mobile App QA & Audio Engine Validation",
+        rating: 5,
+        badge: "Verified Client",
+        quote: "Audio stream stability and background playback can make or break a story app. ZeroBugStudio identified tricky edge cases in our offline caching and memory pipeline before we launched on Google Play. Truly exceptional work."
+      },
+      {
+        id: "review-4",
+        name: "Vikram Mehta",
+        role: "Lead Game Developer",
+        company: "Studio Play",
+        project: "Chess Master & Game QA",
+        rating: 5,
+        badge: "Verified Client",
+        quote: "Game mechanics and collision boundaries require obsessive testing. ZeroBugStudio provided deep frame-rate benchmarks and edge-case validation across diverse Android devices. They helped us maintain a 4.8+ Play Store rating."
+      },
+      {
+        id: "review-5",
+        name: "Neha Gupta",
+        role: "Co-Founder",
+        company: "EdTech Utilities",
+        project: "StudyScan Document Scanner App",
+        rating: 5,
+        badge: "Verified Client",
+        quote: "From camera permissions to real-time PDF edge detection, ZeroBugStudio tested every corner of our student scanner app. Their reproducible bug reports with video logs made fixes effortless."
+      },
+      {
+        id: "review-6",
+        name: "Suresh Patel",
+        role: "Operations Head",
+        company: "SarkariGuide Network",
+        project: "SarkariGuide Buddy & Web Portals",
+        rating: 5,
+        badge: "Verified Client",
+        quote: "Handling sudden traffic surges and instant push notifications during exam announcements used to crash our tables. ZeroBugStudio stress-tested our systems and optimized our front-end for seamless speed."
       }
     ]
   },
 
   services: [
+    {
+      title: "Website & Web App Development",
+      description: "Design and engineer modern, fast-loading, mobile-first websites and web applications with clean architecture, responsive layouts, search engine optimization, and built-in QA standards.",
+      badges: ["Custom Websites", "Web Applications", "Responsive Design", "Performance & SEO", "Full-Stack"]
+    },
+    {
+      title: "Mobile App Development (Android & iOS)",
+      description: "Design and engineer high-performance native and cross-platform mobile apps for Android and iOS with intuitive gestures, 60fps animations, push notification systems, offline SQLite caching, and Play Store release readiness.",
+      badges: ["Android & iOS", "React Native & Flutter", "Google Play Release", "Push Notifications", "Offline Caching"]
+    },
     {
       title: "Manual & Functional Testing",
       description: "Validate application behavior, user journeys, business logic, acceptance criteria, and edge cases through test execution and reproducible bug reports.",

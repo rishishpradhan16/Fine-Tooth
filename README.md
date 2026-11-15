@@ -1,26 +1,40 @@
-ZeroBugStudio — Website Development, Software QA & Testing
+ZeroBugStudio — Web & Mobile App Development, Software QA & Testing
 
-Build fast websites. Catch bugs before your users do.
+Build fast websites & apps. Catch bugs before your users do.
 
-ZeroBugStudio is a web development and software quality assurance agency focused on designing modern, responsive websites and helping teams deliver reliable, user-friendly digital products. From custom web engineering and mobile applications to APIs and browser automation, we help launch and maintain high-quality software.
+ZeroBugStudio is a web & mobile app development and software quality assurance agency focused on engineering modern, responsive websites, native/cross-platform mobile apps (Android & iOS), and helping engineering teams deliver reliable, user-friendly digital products. From custom web engineering and Google Play store apps to APIs, games, and browser automation, we build and test release-ready software.
 
 Services
 
-Website Development & Web Apps — Custom, responsive, and SEO-optimized business websites, SaaS portals, and landing pages.
+Website Development & Web Apps — Custom, responsive, and SEO-optimized business websites, SaaS portals, and landing pages (e.g. Satguru Vision Care, Career Diary).
+
+Mobile App Development (Android & iOS) — High-performance native and cross-platform apps with fluid 60fps animations, offline SQLite caching, push notification infrastructure, and Google Play Store release readiness.
 
 Manual & Functional Testing — Validate features, workflows, business logic, and edge cases.
 
 Website & Cross-Browser Testing — Check usability, responsiveness, layouts, and browser compatibility.
 
-Mobile App Testing — Test Android and iOS app workflows, navigation, and user experience.
+Mobile App Testing & Device Audits — Test Android and iOS app workflows, touch responsiveness, permissions, and background lifecycle.
 
-API & Integration Testing — Verify endpoints, request and response data, error handling, and integrations.
+API & Integration Testing — Verify endpoints, request and response data, HTTP status codes, and security headers.
 
 Automation Testing — Build and maintain automated checks using tools such as Selenium, Playwright, and Cypress.
 
-Regression Testing — Recheck existing functionality after fixes and updates.
+Game Testing & Mechanics Validation — Validate gameplay physics, collision boundaries, level progression, and frame rate stability.
 
-Game Testing — Explore gameplay, controls, progression, and functional issues.
+Featured Google Play Applications
+
+1. SarkariGuide Buddy (com.sarkariguide.buddy) — Government exam prep and alerts utility.
+2. Chess Master (com.chessmaster.play) — Strategy board game with move validation and AI engine.
+3. Nova Jump (com.novajump.game) — Fast-paced arcade platformer with real-time physics.
+4. Zen Mahjong (com.zenmahjong.puzzle) — Tile-matching puzzle game with procedural layouts.
+5. StudyScan (com.studentscanner.studyscan) — High-accuracy document scanner and PDF utility.
+6. NostalgiaCam (com.nostalgiacam) — Vintage analog photography app with GPU film shaders.
+7. KahaaniVerse App (com.kahaaniverse.app) — Audio storytelling and narrative streaming platform.
+
+Client Feedback & 5-Star Reviews
+
+ZeroBugStudio maintains a 5.0 / 5.0 client rating across all launched web platforms, mobile apps, and QA test engineering projects. Authenticated feedback from clients across healthcare, education, gaming, and publishing can be viewed directly on the website.
 
 How We Work
 

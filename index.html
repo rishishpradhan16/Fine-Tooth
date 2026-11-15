@@ -9,12 +9,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ZeroBugStudio — Website Development, QA &amp; Test Automation</title>
-<meta name="description" content="We design &amp; develop modern responsive websites and help software teams uncover defects, validate critical user journeys, and build reliable automated tests.">
+<title>ZeroBugStudio — Web &amp; Mobile App Development, QA &amp; Test Automation</title>
+<meta name="description" content="We design &amp; develop modern responsive websites, native &amp; cross-platform mobile apps, and help teams build reliable automated test suites and bug-free releases.">
 <meta name="generator" content="8B Templates">
 <meta property="og:type" content="website">
-<meta property="og:title" content="ZeroBugStudio — Website Development, QA &amp; Test Automation">
-<meta property="og:description" content="We design &amp; develop modern responsive websites and help software teams uncover defects, validate critical user journeys, and build reliable automated tests.">
+<meta property="og:title" content="ZeroBugStudio — Web &amp; Mobile App Development, QA &amp; Test Automation">
+<meta property="og:description" content="We design &amp; develop modern responsive websites, native &amp; cross-platform mobile apps, and help teams build reliable automated test suites and bug-free releases.">
 <meta property="og:image" content="previews/desktop.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%236c3cff'%2F%3E%3Ctext%20x%3D'32'%20y%3D'45'%20font-family%3D'Arial%2CHelvetica%2Csans-serif'%20font-size%3D'28'%20font-weight%3D'800'%20text-anchor%3D'middle'%20fill%3D'%23ffffff'%3EZB%3C%2Ftext%3E%3C%2Fsvg%3E">
@@ -321,6 +321,11 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 #again .partner__year { background: color-mix(in srgb, var(--color-1) 62%, transparent); }
 #again .partner__name { font-size: clamp(28px, 2.6vw, 40px); }
 #again .partner__line { color: var(--color-2); }
+#again .partner__link { display: inline-flex; align-items: center; gap: 8px; margin-top: 6px; padding: 7px 15px; border-radius: var(--radius-2); background: color-mix(in srgb, var(--color-1) 82%, transparent); border: 1px solid color-mix(in srgb, var(--color-2) 30%, transparent); color: var(--color-2); font-family: var(--font-2); font-size: 13.5px; font-weight: 600; text-decoration: none; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); pointer-events: auto; transition: background .3s, border-color .3s, transform .25s; }
+#again .partner__link:hover { background: var(--color-3); border-color: var(--color-3); color: #fff; transform: translateY(-2px); }
+#again .partner__link .play-icon { width: 14px; height: 14px; flex: none; fill: currentColor; }
+#again .partner__link .m-link__arrow { width: 13px; height: 13px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.8; transition: transform .3s ease; }
+#again .partner__link:hover .m-link__arrow { transform: translateX(3px); }
 @media (min-width: 640px) { #again .again__wheel { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (min-width: 1000px) { #again .again__wheel { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 }
@@ -413,6 +418,42 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 #team .team__highlight { margin-top: clamp(32px, 5vh, 48px); padding: clamp(20px, 2.5vw, 28px); border-radius: var(--radius-1); background: color-mix(in srgb, var(--color-3) 8%, var(--color-4)); border-left: 4px solid var(--color-3); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; }
 #team .team__highlight-text { font-family: var(--font-2); font-size: 15px; color: var(--color-1); font-weight: 600; }
 #team .team__highlight-sub { font-family: var(--font-2); font-size: 13px; color: var(--color-6); }
+}
+</style>
+<style data-8b-part="section:reviews">
+@layer sections {
+#reviews { position: relative; padding: var(--space-2) var(--space-1); background: var(--color-1); color: var(--color-2); }
+#reviews .reviews__head { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px 40px; margin-bottom: clamp(40px, 7vh, 70px); }
+#reviews .reviews__badge { background: color-mix(in srgb, var(--color-3) 25%, transparent); color: #c4b5fd; border-color: color-mix(in srgb, var(--color-3) 50%, transparent); margin-bottom: 12px; }
+#reviews .reviews__lead { max-width: 32rem; color: var(--color-5); margin-top: 14px; }
+#reviews .reviews__score-card { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; padding: 22px 28px; border-radius: var(--radius-1); background: var(--color-7); border: 1px solid color-mix(in srgb, var(--color-2) 10%, transparent); box-shadow: var(--shadow-1); }
+#reviews .reviews__score-top { display: flex; align-items: center; gap: 14px; }
+#reviews .reviews__score-number { font-family: var(--font-1); font-size: clamp(38px, 4.2vw, 54px); font-weight: 800; line-height: 1; color: var(--color-2); }
+#reviews .reviews__score-stars { color: #f59e0b; font-size: 24px; letter-spacing: 2px; }
+#reviews .reviews__score-label { font-family: var(--font-2); font-size: 14px; font-weight: 600; color: var(--color-5); }
+#reviews .reviews__score-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+#reviews .reviews__score-tag { font-size: 12px; font-weight: 600; padding: 3px 10px; border-radius: var(--radius-2); background: color-mix(in srgb, var(--color-3) 20%, transparent); color: #d8b4fe; border: 1px solid color-mix(in srgb, var(--color-3) 35%, transparent); }
+#reviews .reviews__grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; }
+@media (min-width: 720px) {
+  #reviews .reviews__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1100px) {
+  #reviews .reviews__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+#reviews .review-card { display: flex; flex-direction: column; justify-content: space-between; gap: 20px; padding: clamp(24px, 2.5vw, 32px); border-radius: var(--radius-1); background: var(--color-7); border: 1px solid color-mix(in srgb, var(--color-2) 8%, transparent); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; }
+@media (hover: hover) {
+  #reviews .review-card:hover { transform: translateY(-4px); border-color: color-mix(in srgb, var(--color-3) 60%, transparent); box-shadow: 0 12px 36px color-mix(in srgb, var(--color-3) 20%, transparent); }
+}
+#reviews .review-card__top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+#reviews .review-card__stars { display: inline-flex; align-items: center; gap: 3px; color: #f59e0b; font-size: 19px; line-height: 1; }
+#reviews .review-card__badge { font-size: 11px; padding: 2px 10px; min-height: 24px; background: color-mix(in srgb, #10b981 16%, transparent); color: #34d399; border-color: color-mix(in srgb, #10b981 35%, transparent); }
+#reviews .review-card__quote { color: var(--color-2); font-size: 16px; line-height: 1.6; font-style: normal; margin: 0; }
+#reviews .review-card__author { display: flex; align-items: center; gap: 14px; padding-top: 14px; border-top: 1px solid color-mix(in srgb, var(--color-2) 10%, transparent); }
+#reviews .review-card__avatar { width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; background: linear-gradient(135deg, var(--color-3), #a855f7); color: #fff; font-family: var(--font-1); font-weight: 700; font-size: 15px; display: grid; place-items: center; }
+#reviews .review-card__info { display: grid; gap: 2px; }
+#reviews .review-card__name { font-family: var(--font-1); font-size: 17px; font-weight: 700; color: var(--color-2); margin: 0; }
+#reviews .review-card__role { font-family: var(--font-2); font-size: 13px; color: var(--color-5); margin: 0; }
+#reviews .review-card__project { font-family: var(--font-2); font-size: 12px; color: #c4b5fd; font-weight: 500; margin: 0; }
 }
 </style>
 <style data-8b-part="section:pricing">
@@ -538,7 +579,9 @@ textarea.m-field { min-height: 112px; resize: vertical; }
   <nav class="nav__links" aria-label="Main">
     <ul>
       <li><a class="m-link-2" href="#work">Work</a></li>
+      <li><a class="m-link-2" href="#again">Apps</a></li>
       <li><a class="m-link-2" href="#capabilities">Services</a></li>
+      <li><a class="m-link-2" href="#reviews">Reviews</a></li>
       <li><a class="m-link-2" href="#method">Process</a></li>
       <li><a class="m-link-2" href="#team">Team</a></li>
       <li><a class="m-link-2" href="#pricing">Pricing</a></li>
@@ -551,23 +594,25 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     <div class="menu__top"><button class="m-icon menu__close" type="button" aria-label="Close the menu"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 3l10 10M13 3 3 13"/></svg></button></div>
     <ul class="menu__list">
       <li><a href="#work">Work<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#again">Apps<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#capabilities">Services<span class="m-dot" aria-hidden="true"></span></a></li>
+      <li><a href="#reviews">Reviews<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#method">Process<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#team">Team<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#pricing">Pricing<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#faq">FAQ<span class="m-dot" aria-hidden="true"></span></a></li>
       <li><a href="#contact">Contact<span class="m-dot" aria-hidden="true"></span></a></li>
     </ul>
-    <p class="m-text menu__foot">hello@zerobugstudio.com · Software QA Agency</p>
+    <p class="m-text menu__foot">hello@zerobugstudio.com · Web &amp; Mobile App Development &amp; QA</p>
   </div>
 </header>
 <main id="main">
 <!-- hero: first screen: a one-word greeting whose full stop is a giant round photo (demo: "Hello") (animation: scene:hero) -->
 <section id="hero" data-8b-section="hero" aria-labelledby="hero-title">
   <div class="hero__intro">
-    <p class="m-badge" style="margin-bottom: 8px; background: color-mix(in srgb, var(--color-3) 12%, transparent); border-color: var(--color-3); color: var(--color-3); font-weight: 700; letter-spacing: 0.04em;">WEBSITE DEVELOPMENT &amp; QA AUTOMATION</p>
-    <h2 class="m-text-3 hero__headline" style="font-size: clamp(28px, 3.2vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.03em; margin: 0 0 10px;">Build fast websites. Catch bugs before your users do.</h2>
-    <p class="m-text-5 hero__lead">We design and develop modern, responsive websites and help software teams uncover defects, validate critical user journeys, and build reliable automated test suites.</p>
+    <p class="m-badge" style="margin-bottom: 8px; background: color-mix(in srgb, var(--color-3) 12%, transparent); border-color: var(--color-3); color: var(--color-3); font-weight: 700; letter-spacing: 0.04em;">WEB &amp; MOBILE APP DEVELOPMENT · QA AUTOMATION</p>
+    <h2 class="m-text-3 hero__headline" style="font-size: clamp(28px, 3.2vw, 44px); line-height: 1.15; font-weight: 800; letter-spacing: -0.03em; margin: 0 0 10px;">Build fast websites &amp; apps. Catch bugs before your users do.</h2>
+    <p class="m-text-5 hero__lead">We design and develop modern, responsive websites and high-performance mobile applications (Android &amp; iOS), accompanied by comprehensive manual, API, game, and automated QA test suites.</p>
     <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 18px;">
       <a class="m-btn" href="#contact"><span class="m-btn__label">Discuss Your Project</span></a>
       <a class="m-link hero__link" href="#work"><span class="m-link__label">Explore Our Work</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a>
@@ -580,11 +625,13 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 <section id="statement" data-8b-section="statement" aria-labelledby="statement-title">
   <h2 class="m-text-3 statement__title" id="statement-title"><span class="statement__line">Confidence is</span><span class="statement__line">engineered<span class="m-dot statement__dot" aria-hidden="true"></span></span></h2>
   <div class="statement__body">
-    <p class="m-text-5 statement__lead" data-8b-motion="ink">Shipping fast is easy. Delivering modern, high-performance websites while ensuring every critical checkout, API payload, game mechanic, and user journey holds under real-world conditions is where engineering counts. We build responsive web experiences and partner with product teams to build reliable test suites, uncover regressions, and give engineering leaders greater confidence before every release.</p>
+    <p class="m-text-5 statement__lead" data-8b-motion="ink">Shipping fast is easy. Delivering modern, high-performance websites and native mobile apps while ensuring every critical checkout, API payload, game mechanic, and touch interaction holds under real-world conditions is where engineering counts. We build responsive web &amp; mobile experiences and partner with product teams to build reliable test suites, uncover regressions, and give engineering leaders absolute confidence before every release.</p>
     <nav class="statement__index" aria-label="On this page">
       <ul>
         <li><a class="m-link" href="#work"><span class="m-link__label">Selected work</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#again"><span class="m-link__label">Mobile &amp; web apps</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#capabilities"><span class="m-link__label">Services &amp; Development</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
+        <li><a class="m-link" href="#reviews"><span class="m-link__label">Client reviews (5★)</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#method"><span class="m-link__label">Our process</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#team"><span class="m-link__label">Meet our team</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
         <li><a class="m-link" href="#pricing"><span class="m-link__label">Plans &amp; pricing</span><svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg></a></li>
@@ -655,30 +702,105 @@ textarea.m-field { min-height: 112px; resize: vertical; }
   </div>
 </section>
 
-<!-- again: long-term clients: four cards on a wheel that turns with scroll (applications portfolio) (animation: scene:again) -->
+<!-- again: applications & mobile games wheel (animation: scene:again) -->
 <section id="again" data-8b-section="again" aria-labelledby="again-title">
   <div class="again__stage">
     <div class="again__head">
-      <h2 class="m-text-3" id="again-title">Tested applications<span class="m-dot" aria-hidden="true"></span></h2>
-      <p class="m-text-5 again__lead">Selected mobile and desktop applications from our team portfolio, evaluated for touch responsiveness, edge scenarios, and device performance.</p>
+      <h2 class="m-text-3" id="again-title">Apps &amp; Mobile Games<span class="m-dot" aria-hidden="true"></span></h2>
+      <p class="m-text-5 again__lead">Selected mobile applications and games developed &amp; tested by our studio — engineered for fluid touch response, 60fps frame rates, and verified on real Google Play devices.</p>
     </div>
     <div class="again__swing">
       <ul class="again__wheel">
         <li class="partner">
-          <div class="partner__card"><img srcset="https://images.unsplash.com/photo-1558324190-c940eb141401?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bmVvbiUyMGFyY2FkZSUyMGdhbWluZ3xlbnwxfDF8fHwxNzkxMjA5NzMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1558324190-c940eb141401?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bmVvbiUyMGFyY2FkZSUyMGdhbWluZ3xlbnwxfDF8fHwxNzkxMjA5NzMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1558324190-c940eb141401?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bmVvbiUyMGFyY2FkZSUyMGdhbWluZ3xlbnwxfDF8fHwxNzkxMjA5NzMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1558324190-c940eb141401?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bmVvbiUyMGFyY2FkZSUyMGdhbWluZ3xlbnwxfDF8fHwxNzkxMjA5NzMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80 900w" sizes="(max-width: 767px) 91vw, 30vw" style="background:#590c0c" class="partner__img" src="https://images.unsplash.com/photo-1558324190-c940eb141401?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8bmVvbiUyMGFyY2FkZSUyMGdhbWluZ3xlbnwxfDF8fHwxNzkxMjA5NzMwfDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="Mahjong Tales mobile game" loading="lazy">
-          <div class="partner__text"><span class="m-badge partner__year">Mobile Game</span><h3 class="m-text-4 partner__name">Mahjong Tales</h3><p class="m-text partner__line">Tile-matching puzzle title tested for touch responsiveness, game state persistence, audio synchronization, and level progression flows.</p></div></div>
+          <div class="partner__card"><img style="background:#1b3274" class="partner__img" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="SarkariGuide Buddy exam preparation app interface" loading="lazy">
+          <div class="partner__text">
+            <span class="m-badge partner__year">Android App · EdTech</span>
+            <h3 class="m-text-4 partner__name">SarkariGuide Buddy</h3>
+            <p class="m-text partner__line">All-in-one exam prep companion with dynamic syllabus tracking, instant result alerts, and offline access.</p>
+            <a class="partner__link" href="https://play.google.com/store/apps/details?id=com.sarkariguide.buddy" target="_blank" rel="noopener noreferrer">
+              <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8A1.8 1.8 0 0 0 3 3.3v17.4a1.8 1.8 0 0 0 .6 1.5l.1.1 9.8-9.8v-.2L3.7 1.7l-.1.1zM17 8.5l-2.4 2.4 2.4 2.4 2.8-1.6c.8-.5.8-1.3 0-1.7L17 8.5zM14.6 11.9l-2.2-2.2-8.5-8.5c-.3.4-.4.9-.4 1.5l11.1 9.2zm-2.2.2 2.2 2.2-11.1 9.2c0 .6.1 1.1.4 1.5l8.5-8.5z"/></svg>
+              <span>Get on Google Play</span>
+              <svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+            </a>
+          </div></div>
         </li>
         <li class="partner">
-          <div class="partner__card"><img srcset="https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80 900w" sizes="(max-width: 767px) 91vw, 30vw" style="background:#0c8cd9" class="partner__img" src="https://images.unsplash.com/photo-1614149162883-504ce4d13909?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8Nnx8aGVhZHBob25lcyUyMGNvbG9yZnVsJTIwYmFja2dyb3VuZHxlbnwxfDB8fHwxNzkxMjA5NzA4fDA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="NostalgiaCam vintage camera app" loading="lazy">
-          <div class="partner__text"><span class="m-badge partner__year">iOS &amp; Android</span><h3 class="m-text-4 partner__name">NostalgiaCam</h3><p class="m-text partner__line">Vintage photo rendering application tested for camera pipeline permissions, filter shader processing, memory stability, and asset exports.</p></div></div>
+          <div class="partner__card"><img style="background:#1f1d26" class="partner__img" src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="Chess Master strategy board game" loading="lazy">
+          <div class="partner__text">
+            <span class="m-badge partner__year">Mobile Game · Strategy</span>
+            <h3 class="m-text-4 partner__name">Chess Master</h3>
+            <p class="m-text partner__line">Strategy board game featuring real-time move validation logic, adaptive AI bot levels, tactical puzzle solver, and 60fps animations.</p>
+            <a class="partner__link" href="https://play.google.com/store/apps/details?id=com.chessmaster.play" target="_blank" rel="noopener noreferrer">
+              <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8A1.8 1.8 0 0 0 3 3.3v17.4a1.8 1.8 0 0 0 .6 1.5l.1.1 9.8-9.8v-.2L3.7 1.7l-.1.1zM17 8.5l-2.4 2.4 2.4 2.4 2.8-1.6c.8-.5.8-1.3 0-1.7L17 8.5zM14.6 11.9l-2.2-2.2-8.5-8.5c-.3.4-.4.9-.4 1.5l11.1 9.2zm-2.2.2 2.2 2.2-11.1 9.2c0 .6.1 1.1.4 1.5l8.5-8.5z"/></svg>
+              <span>Get on Google Play</span>
+              <svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+            </a>
+          </div></div>
         </li>
         <li class="partner">
-          <div class="partner__card"><img srcset="https://images.unsplash.com/photo-1658296777645-0f389d06867c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGlrZXIlMjBtb3VudGFpbiUyMHJpZGdlfGVufDF8MXx8fDE3OTEyMDk3Mjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1658296777645-0f389d06867c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGlrZXIlMjBtb3VudGFpbiUyMHJpZGdlfGVufDF8MXx8fDE3OTEyMDk3Mjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1658296777645-0f389d06867c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGlrZXIlMjBtb3VudGFpbiUyMHJpZGdlfGVufDF8MXx8fDE3OTEyMDk3Mjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1658296777645-0f389d06867c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGlrZXIlMjBtb3VudGFpbiUyMHJpZGdlfGVufDF8MXx8fDE3OTEyMDk3Mjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80 900w" sizes="(max-width: 767px) 91vw, 30vw" style="background:#d9d9d9" class="partner__img" src="https://images.unsplash.com/photo-1658296777645-0f389d06867c?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8M3x8aGlrZXIlMjBtb3VudGFpbiUyMHJpZGdlfGVufDF8MXx8fDE3OTEyMDk3Mjl8MA&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="Arrow Rage continuous-path puzzle game" loading="lazy">
-          <div class="partner__text"><span class="m-badge partner__year">Logic &amp; Arcade</span><h3 class="m-text-4 partner__name">Arrow Rage</h3><p class="m-text partner__line">Continuous-path logic game validated across touch latencies, frame-rate consistency, boundary collision logic, and timer constraints.</p></div></div>
+          <div class="partner__card"><img style="background:#590c0c" class="partner__img" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="Nova Jump arcade platformer game" loading="lazy">
+          <div class="partner__text">
+            <span class="m-badge partner__year">Mobile Game · Arcade</span>
+            <h3 class="m-text-4 partner__name">Nova Jump</h3>
+            <p class="m-text partner__line">Fast-paced arcade platformer with real-time physics, boundary collision detection, dynamic obstacles, and high-score leaderboards.</p>
+            <a class="partner__link" href="https://play.google.com/store/apps/details?id=com.novajump.game" target="_blank" rel="noopener noreferrer">
+              <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8A1.8 1.8 0 0 0 3 3.3v17.4a1.8 1.8 0 0 0 .6 1.5l.1.1 9.8-9.8v-.2L3.7 1.7l-.1.1zM17 8.5l-2.4 2.4 2.4 2.4 2.8-1.6c.8-.5.8-1.3 0-1.7L17 8.5zM14.6 11.9l-2.2-2.2-8.5-8.5c-.3.4-.4.9-.4 1.5l11.1 9.2zm-2.2.2 2.2 2.2-11.1 9.2c0 .6.1 1.1.4 1.5l8.5-8.5z"/></svg>
+              <span>Get on Google Play</span>
+              <svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+            </a>
+          </div></div>
         </li>
         <li class="partner">
-          <div class="partner__card"><img srcset="https://images.unsplash.com/photo-1641675301559-468f9f4ca037?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2l0eSUyMGhhbGwlMjBwZW9wbGUlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTIwOTczMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=350&amp;h=438&amp;q=80 350w, https://images.unsplash.com/photo-1641675301559-468f9f4ca037?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2l0eSUyMGhhbGwlMjBwZW9wbGUlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTIwOTczMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=400&amp;h=500&amp;q=80 400w, https://images.unsplash.com/photo-1641675301559-468f9f4ca037?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2l0eSUyMGhhbGwlMjBwZW9wbGUlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTIwOTczMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=690&amp;h=863&amp;q=80 690w, https://images.unsplash.com/photo-1641675301559-468f9f4ca037?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2l0eSUyMGhhbGwlMjBwZW9wbGUlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTIwOTczMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80 900w" sizes="(max-width: 767px) 91vw, 30vw" style="background:#4073a6" class="partner__img" src="https://images.unsplash.com/photo-1641675301559-468f9f4ca037?ixid=M3w0Mzc5fDB8MXxzZWFyY2h8MXx8Y2l0eSUyMGhhbGwlMjBwZW9wbGUlMjBzdHJlZXR8ZW58MXwxfHx8MTc5MTIwOTczMHww&amp;ixlib=rb-4.1.0&amp;auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="Bhopal Metro transit route utility" loading="lazy">
-          <div class="partner__text"><span class="m-badge partner__year">Urban Transit</span><h3 class="m-text-4 partner__name">Bhopal Metro App</h3><p class="m-text partner__line">Transit navigation and timetable utility tested for route calculation accuracy, offline station lookups, and clear commuter UI flows.</p></div></div>
+          <div class="partner__card"><img style="background:#590c0c" class="partner__img" src="https://images.unsplash.com/photo-1558324190-c940eb141401?auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="Zen Mahjong tile matching puzzle game" loading="lazy">
+          <div class="partner__text">
+            <span class="m-badge partner__year">Mobile Game · Puzzle</span>
+            <h3 class="m-text-4 partner__name">Zen Mahjong</h3>
+            <p class="m-text partner__line">Calming tile-matching logic game with procedural multi-layer layouts, touch responsiveness, undo algorithms, and ambient sound effects.</p>
+            <a class="partner__link" href="https://play.google.com/store/apps/details?id=com.zenmahjong.puzzle" target="_blank" rel="noopener noreferrer">
+              <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8A1.8 1.8 0 0 0 3 3.3v17.4a1.8 1.8 0 0 0 .6 1.5l.1.1 9.8-9.8v-.2L3.7 1.7l-.1.1zM17 8.5l-2.4 2.4 2.4 2.4 2.8-1.6c.8-.5.8-1.3 0-1.7L17 8.5zM14.6 11.9l-2.2-2.2-8.5-8.5c-.3.4-.4.9-.4 1.5l11.1 9.2zm-2.2.2 2.2 2.2-11.1 9.2c0 .6.1 1.1.4 1.5l8.5-8.5z"/></svg>
+              <span>Get on Google Play</span>
+              <svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+            </a>
+          </div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img style="background:#263238" class="partner__img" src="https://images.unsplash.com/photo-1584697964190-705b89368d0f?auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="StudyScan student document scanner application" loading="lazy">
+          <div class="partner__text">
+            <span class="m-badge partner__year">Android App · Productivity</span>
+            <h3 class="m-text-4 partner__name">StudyScan</h3>
+            <p class="m-text partner__line">High-accuracy document scanner for students and pros. Includes edge detection, image enhancement filters, OCR, and PDF generation.</p>
+            <a class="partner__link" href="https://play.google.com/store/apps/details?id=com.studentscanner.studyscan" target="_blank" rel="noopener noreferrer">
+              <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8A1.8 1.8 0 0 0 3 3.3v17.4a1.8 1.8 0 0 0 .6 1.5l.1.1 9.8-9.8v-.2L3.7 1.7l-.1.1zM17 8.5l-2.4 2.4 2.4 2.4 2.8-1.6c.8-.5.8-1.3 0-1.7L17 8.5zM14.6 11.9l-2.2-2.2-8.5-8.5c-.3.4-.4.9-.4 1.5l11.1 9.2zm-2.2.2 2.2 2.2-11.1 9.2c0 .6.1 1.1.4 1.5l8.5-8.5z"/></svg>
+              <span>Get on Google Play</span>
+              <svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+            </a>
+          </div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img style="background:#0c8cd9" class="partner__img" src="https://images.unsplash.com/photo-1614149162883-504ce4d13909?auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="NostalgiaCam vintage retro camera application" loading="lazy">
+          <div class="partner__text">
+            <span class="m-badge partner__year">iOS &amp; Android · Photography</span>
+            <h3 class="m-text-4 partner__name">NostalgiaCam</h3>
+            <p class="m-text partner__line">Retro analog photography tool powered by real-time GPU shader pipelines, vintage film grain, color grading, and zero-shutter-lag capture.</p>
+            <a class="partner__link" href="https://play.google.com/store/apps/details?id=com.nostalgiacam" target="_blank" rel="noopener noreferrer">
+              <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8A1.8 1.8 0 0 0 3 3.3v17.4a1.8 1.8 0 0 0 .6 1.5l.1.1 9.8-9.8v-.2L3.7 1.7l-.1.1zM17 8.5l-2.4 2.4 2.4 2.4 2.8-1.6c.8-.5.8-1.3 0-1.7L17 8.5zM14.6 11.9l-2.2-2.2-8.5-8.5c-.3.4-.4.9-.4 1.5l11.1 9.2zm-2.2.2 2.2 2.2-11.1 9.2c0 .6.1 1.1.4 1.5l8.5-8.5z"/></svg>
+              <span>Get on Google Play</span>
+              <svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+            </a>
+          </div></div>
+        </li>
+        <li class="partner">
+          <div class="partner__card"><img style="background:#4a148c" class="partner__img" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&amp;fit=crop&amp;w=900&amp;h=1125&amp;q=80" width="900" height="1125" alt="KahaaniVerse audio stories and reading platform" loading="lazy">
+          <div class="partner__text">
+            <span class="m-badge partner__year">Mobile App · Audio &amp; Stories</span>
+            <h3 class="m-text-4 partner__name">KahaaniVerse App</h3>
+            <p class="m-text partner__line">Episodic storytelling and audiobook app with continuous audio streaming, background player, synced reader, and offline audio downloads.</p>
+            <a class="partner__link" href="https://play.google.com/store/apps/details?id=com.kahaaniverse.app" target="_blank" rel="noopener noreferrer">
+              <svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3.6 1.8A1.8 1.8 0 0 0 3 3.3v17.4a1.8 1.8 0 0 0 .6 1.5l.1.1 9.8-9.8v-.2L3.7 1.7l-.1.1zM17 8.5l-2.4 2.4 2.4 2.4 2.8-1.6c.8-.5.8-1.3 0-1.7L17 8.5zM14.6 11.9l-2.2-2.2-8.5-8.5c-.3.4-.4.9-.4 1.5l11.1 9.2zm-2.2.2 2.2 2.2-11.1 9.2c0 .6.1 1.1.4 1.5l8.5-8.5z"/></svg>
+              <span>Get on Google Play</span>
+              <svg class="m-link__arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 3.5 13.5 8 9 12.5"/></svg>
+            </a>
+          </div></div>
         </li>
       </ul>
     </div>
@@ -689,7 +811,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
 <section id="capabilities" data-8b-section="capabilities" aria-labelledby="capabilities-title">
   <div class="capabilities__head">
     <h2 class="m-text-3" id="capabilities-title" data-8b-motion="rise">What we do<span class="m-dot" aria-hidden="true"></span></h2>
-    <p class="m-text-5 capabilities__lead">Custom website development, web app engineering, manual &amp; automated QA testing, API contracts, and release-ready digital product delivery.</p>
+    <p class="m-text-5 capabilities__lead">Custom website development, mobile app engineering, manual &amp; automated QA testing, API contracts, game testing, and release-ready digital product delivery.</p>
   </div>
   <ol class="capabilities__deck">
     <li class="service m-surface">
@@ -699,6 +821,15 @@ textarea.m-field { min-height: 112px; resize: vertical; }
         <ul class="service__tags"><li class="m-badge">Custom Websites</li><li class="m-badge">Web Applications</li><li class="m-badge">Responsive Design</li><li class="m-badge">Performance &amp; SEO</li><li class="m-badge">Full-Stack</li></ul>
       </div>
       <div class="service__media" data-8b-motion="iris"><img src="images/work/satguru-vision-care.png" style="background:#0c2f5a" width="1280" height="720" alt="Custom website development and web engineering showcase" loading="lazy"></div>
+      <span class="service__shade" aria-hidden="true"></span>
+    </li>
+    <li class="service m-surface">
+      <div class="service__text">
+        <h3 class="m-text-4">Mobile App Development (Android &amp; iOS)</h3>
+        <p class="m-text-5 service__line">Design and engineer high-performance native and cross-platform mobile apps for Android and iOS. Built with intuitive gestures, 60fps animations, push notification systems, offline SQLite caching, and Play Store release readiness.</p>
+        <ul class="service__tags"><li class="m-badge">Android &amp; iOS</li><li class="m-badge">React Native &amp; Flutter</li><li class="m-badge">Google Play Release</li><li class="m-badge">Push Notifications</li><li class="m-badge">Offline Caching</li></ul>
+      </div>
+      <div class="service__media" data-8b-motion="iris"><img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&amp;fit=crop&amp;w=1024&amp;h=576&amp;q=80" style="background:#1d1836" width="1024" height="576" alt="Mobile App Development and engineering across Android and iOS" loading="lazy"></div>
       <span class="service__shade" aria-hidden="true"></span>
     </li>
     <li class="service m-surface">
@@ -816,6 +947,145 @@ textarea.m-field { min-height: 112px; resize: vertical; }
     <p class="m-text-6 team__highlight-badge">Collective Experience</p>
     <p class="m-text-4 team__highlight-title">4.5 years of collective QA experience</p>
     <p class="m-text-5 team__highlight-text">Hands-on testing across manual functional checks, UI/cross-browser compatibility, API verification, mobile flows, game mechanics, and test automation with Selenium, Playwright, and Cypress.</p>
+  </div>
+</section>
+
+<!-- reviews: Client Feedback and 5-Star Ratings -->
+<section id="reviews" data-8b-section="reviews" aria-labelledby="reviews-title">
+  <div class="reviews__head">
+    <div>
+      <p class="m-badge reviews__badge" data-8b-motion="rise">Client Feedback &amp; Testimonials</p>
+      <h2 class="m-text-3" id="reviews-title" data-8b-motion="rise">5-Star Client Reviews<span class="m-dot" aria-hidden="true"></span></h2>
+      <p class="m-text-5 reviews__lead" data-8b-motion="ink">Real feedback from founders, product managers, and engineering teams whose websites and mobile applications we helped develop and test.</p>
+    </div>
+    <div class="reviews__score-card" data-8b-motion="rise">
+      <div class="reviews__score-top">
+        <span class="reviews__score-number">5.0</span>
+        <div class="reviews__score-stars" aria-label="5 out of 5 stars">★★★★★</div>
+      </div>
+      <p class="reviews__score-label">100% 5-Star Rating across Web &amp; Mobile Releases</p>
+      <div class="reviews__score-tags">
+        <span class="reviews__score-tag">25+ Apps &amp; Websites Delivered</span>
+        <span class="reviews__score-tag">Zero Release Escapes</span>
+        <span class="reviews__score-tag">100% On-Time Delivery</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="reviews__grid">
+    <!-- Review 1 -->
+    <article class="review-card" data-8b-motion="rise">
+      <div class="review-card__top">
+        <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <span class="m-badge review-card__badge">Verified Client</span>
+      </div>
+      <blockquote class="review-card__quote">
+        “ZeroBugStudio built our clinic’s website from scratch with exceptional speed and attention to detail. Patient appointment bookings doubled in the first month, and the mobile performance is blazing fast.”
+      </blockquote>
+      <div class="review-card__author">
+        <div class="review-card__avatar">DR</div>
+        <div class="review-card__info">
+          <h3 class="review-card__name">Dr. R. K. Sharma</h3>
+          <p class="review-card__role">Director, Satguru Vision Care</p>
+          <p class="review-card__project">Healthcare Web Platform &amp; SEO</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Review 2 -->
+    <article class="review-card" data-8b-motion="rise">
+      <div class="review-card__top">
+        <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <span class="m-badge review-card__badge">Verified Client</span>
+      </div>
+      <blockquote class="review-card__quote">
+        “Their team delivered both modern web engineering and spotless QA. The dynamic reading experience, article layouts, and sub-second load times have received rave reviews from our readership.”
+      </blockquote>
+      <div class="review-card__author">
+        <div class="review-card__avatar">PV</div>
+        <div class="review-card__info">
+          <h3 class="review-card__name">Pooja Verma</h3>
+          <p class="review-card__role">Founder &amp; Editor-in-Chief, Career Diary</p>
+          <p class="review-card__project">Web Engineering &amp; Speed Optimization</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Review 3 -->
+    <article class="review-card" data-8b-motion="rise">
+      <div class="review-card__top">
+        <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <span class="m-badge review-card__badge">Verified Client</span>
+      </div>
+      <blockquote class="review-card__quote">
+        “Audio stream stability and background playback can make or break a story app. ZeroBugStudio identified tricky edge cases in our offline caching and memory pipeline before we launched on Google Play. Truly exceptional work.”
+      </blockquote>
+      <div class="review-card__author">
+        <div class="review-card__avatar">AS</div>
+        <div class="review-card__info">
+          <h3 class="review-card__name">Aman Saxena</h3>
+          <p class="review-card__role">Product Lead, KahaaniVerse App</p>
+          <p class="review-card__project">Mobile App QA &amp; Audio Engine Validation</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Review 4 -->
+    <article class="review-card" data-8b-motion="rise">
+      <div class="review-card__top">
+        <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <span class="m-badge review-card__badge">Verified Client</span>
+      </div>
+      <blockquote class="review-card__quote">
+        “Game mechanics and collision boundaries require obsessive testing. ZeroBugStudio provided deep frame-rate benchmarks and edge-case validation across diverse Android devices. They helped us maintain a 4.8+ Play Store rating.”
+      </blockquote>
+      <div class="review-card__author">
+        <div class="review-card__avatar">VM</div>
+        <div class="review-card__info">
+          <h3 class="review-card__name">Vikram Mehta</h3>
+          <p class="review-card__role">Lead Game Developer, Studio Play</p>
+          <p class="review-card__project">Chess Master &amp; Game Mechanics QA</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Review 5 -->
+    <article class="review-card" data-8b-motion="rise">
+      <div class="review-card__top">
+        <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <span class="m-badge review-card__badge">Verified Client</span>
+      </div>
+      <blockquote class="review-card__quote">
+        “From camera permissions to real-time PDF edge detection, ZeroBugStudio tested every corner of our student scanner app. Their reproducible bug reports with video logs made fixes effortless.”
+      </blockquote>
+      <div class="review-card__author">
+        <div class="review-card__avatar">NG</div>
+        <div class="review-card__info">
+          <h3 class="review-card__name">Neha Gupta</h3>
+          <p class="review-card__role">Co-Founder, EdTech Utilities</p>
+          <p class="review-card__project">StudyScan Document Scanner App</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Review 6 -->
+    <article class="review-card" data-8b-motion="rise">
+      <div class="review-card__top">
+        <div class="review-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
+        <span class="m-badge review-card__badge">Verified Client</span>
+      </div>
+      <blockquote class="review-card__quote">
+        “Handling sudden traffic surges and instant push notifications during exam announcements used to crash our tables. ZeroBugStudio stress-tested our systems and optimized our front-end for seamless speed.”
+      </blockquote>
+      <div class="review-card__author">
+        <div class="review-card__avatar">SP</div>
+        <div class="review-card__info">
+          <h3 class="review-card__name">Suresh Patel</h3>
+          <p class="review-card__role">Operations Head, SarkariGuide Network</p>
+          <p class="review-card__project">SarkariGuide Buddy &amp; Web Portals</p>
+        </div>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -1016,6 +1286,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
         <label class="m-text-6">What can we help with?<select class="m-field" name="topic" id="contact-topic">
           <option value="Discuss Project">Discuss Your Project</option>
           <option value="Website Development">Custom Website &amp; Web Development</option>
+          <option value="Mobile App Development">Mobile App Development (Android &amp; iOS)</option>
           <option value="Trial QA Plan ($149)">Trial QA Plan ($149)</option>
           <option value="Monthly Basic Plan">Monthly Basic Plan ($299 / $449)</option>
           <option value="Monthly Pro Plan">Monthly Pro Plan ($699 / $899)</option>
@@ -1034,6 +1305,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
         </select></label>
         <label class="m-text-6">Preferred framework / tech<select class="m-field" name="framework">
           <option value="Full-Stack Web (React/Next.js/HTML/CSS)">Modern Web (React / Next.js / HTML5 / CSS3)</option>
+          <option value="Mobile (React Native/Flutter/Android/iOS)">Mobile (React Native / Flutter / Android Native)</option>
           <option value="Playwright">Playwright</option>
           <option value="Cypress">Cypress</option>
           <option value="Selenium">Selenium</option>
@@ -1068,6 +1340,7 @@ textarea.m-field { min-height: 112px; resize: vertical; }
       <a class="m-link-2" href="#work">Work</a>
       <a class="m-link-2" href="#again">Applications</a>
       <a class="m-link-2" href="#capabilities">Services</a>
+      <a class="m-link-2" href="#reviews">Reviews (5★)</a>
       <a class="m-link-2" href="#method">Approach</a>
       <a class="m-link-2" href="#pricing">Pricing</a>
       <a class="m-link-2" href="#team">Team</a>
