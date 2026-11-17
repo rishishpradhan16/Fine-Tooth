@@ -64,15 +64,26 @@ Tools are selected according to each project's needs.
 
 Website
 
-This repository contains the ZeroBugStudio agency website, built with HTML, CSS, and JavaScript.
+This repository contains the ZeroBugStudio agency website, built with Next.js 14 (App Router), React, TypeScript, Lenis Smooth Scroll, and GSAP ScrollTrigger.
 
 Run Locally
 
-Clone this repository.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-Open index.html in your browser.
+2. Start the local development server:
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-No build step is required for the current static website.
+3. Build for production:
+   ```bash
+   npm run build
+   npm run start
+   ```
 
 Project Status
 
